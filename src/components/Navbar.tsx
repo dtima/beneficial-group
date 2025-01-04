@@ -24,9 +24,21 @@ export const Navbar = () => {
             <a href="/" className="text-secondary hover:text-primary transition-colors">
               {t("nav.home")}
             </a>
-            <a href="#about" className="text-secondary hover:text-primary transition-colors">
-              {t("nav.about")}
-            </a>
+            
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center text-secondary hover:text-primary transition-colors">
+                {t("nav.about")}
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem>
+                  <a href="/about/ceo" className="w-full">Meet the CEO</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <a href="/about/team" className="w-full">Our Team</a>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center text-secondary hover:text-primary transition-colors">

@@ -9,6 +9,9 @@ import Mining from "./pages/services/Mining";
 import Transport from "./pages/services/Transport";
 import Forestry from "./pages/services/Forestry";
 import Agriculture from "./pages/services/Agriculture";
+import CEO from "./pages/about/CEO";
+import Team from "./pages/about/Team";
+import Projects from "./pages/Projects";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +28,9 @@ const App = () => (
             <Route path="/services/transport" element={<Transport />} />
             <Route path="/services/forestry" element={<Forestry />} />
             <Route path="/services/agriculture" element={<Agriculture />} />
+            <Route path="/about/ceo" element={<CEO />} />
+            <Route path="/about/team" element={<Team />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
