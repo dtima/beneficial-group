@@ -20,7 +20,7 @@ const Agriculture = () => {
               Agricultural Services
             </h1>
             <p className="text-xl text-center max-w-2xl mx-auto">
-              Innovative agricultural solutions for modern farming and sustainable food production.
+              Specialized in cassava cultivation and processing, providing innovative agricultural solutions for modern farming practices.
             </p>
           </div>
         </div>
@@ -35,17 +35,8 @@ const Agriculture = () => {
                     <Wheat className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Crop Production</h3>
-                    <p className="text-gray-600">Modern farming techniques for optimal crop yields.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="p-2 bg-primary/10 rounded-lg">
-                    <Leaf className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold mb-2">Seed Management</h3>
-                    <p className="text-gray-600">Quality seed selection and storage solutions.</p>
+                    <h3 className="text-lg font-semibold mb-2">Cassava Cultivation</h3>
+                    <p className="text-gray-600">Modern farming techniques for optimal cassava production.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -53,8 +44,8 @@ const Agriculture = () => {
                     <Sun className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Sustainable Farming</h3>
-                    <p className="text-gray-600">Eco-friendly farming practices and techniques.</p>
+                    <h3 className="text-lg font-semibold mb-2">Processing Solutions</h3>
+                    <p className="text-gray-600">Advanced cassava processing and value addition.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -62,15 +53,15 @@ const Agriculture = () => {
                     <Droplets className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Irrigation Systems</h3>
-                    <p className="text-gray-600">Modern irrigation solutions for efficient water usage.</p>
+                    <h3 className="text-lg font-semibold mb-2">Sustainable Farming</h3>
+                    <p className="text-gray-600">Eco-friendly farming practices and resource management.</p>
                   </div>
                 </div>
               </div>
             </div>
             <div>
               <img 
-                src="/agriculture-operations.jpg" 
+                src="/lovable-uploads/67684acb-965f-4548-8f62-5c24c2600e09.png" 
                 alt="Agricultural Operations"
                 className="rounded-lg shadow-lg w-full h-full object-cover"
               />

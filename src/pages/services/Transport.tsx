@@ -20,7 +20,7 @@ const Transport = () => {
               Transport Services
             </h1>
             <p className="text-xl text-center max-w-2xl mx-auto">
-              Professional transportation solutions for various industries with a focus on reliability and efficiency.
+              Professional transportation solutions specializing in oil and gas logistics for local project supply chains across Cameroon.
             </p>
           </div>
         </div>
@@ -35,8 +35,8 @@ const Transport = () => {
                     <Truck className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Freight Transport</h3>
-                    <p className="text-gray-600">Reliable freight transportation services across the region.</p>
+                    <h3 className="text-lg font-semibold mb-2">Oil & Gas Logistics</h3>
+                    <p className="text-gray-600">Specialized transportation for oil and gas industry supply chains.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -44,17 +44,8 @@ const Transport = () => {
                     <Package className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Cargo Handling</h3>
-                    <p className="text-gray-600">Professional cargo handling and storage solutions.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="p-2 bg-primary/10 rounded-lg">
-                    <Clock className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold mb-2">Express Delivery</h3>
-                    <p className="text-gray-600">Time-sensitive delivery services for urgent shipments.</p>
+                    <h3 className="text-lg font-semibold mb-2">Project Supply</h3>
+                    <p className="text-gray-600">Reliable transportation solutions for local project requirements.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -70,7 +61,7 @@ const Transport = () => {
             </div>
             <div>
               <img 
-                src="/transport-operations.jpg" 
+                src="/lovable-uploads/6cf4d678-27a8-42e7-8bff-5619ebe7608f.png" 
                 alt="Transport Operations"
                 className="rounded-lg shadow-lg w-full h-full object-cover"
               />

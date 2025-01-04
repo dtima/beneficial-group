@@ -20,7 +20,7 @@ const Forestry = () => {
               Forestry Services
             </h1>
             <p className="text-xl text-center max-w-2xl mx-auto">
-              Sustainable forestry management and eco-conscious solutions for a greener future.
+              Sustainable bamboo plantation management and transformation into eco-conscious products including toothpicks, furniture, and home apparel.
             </p>
           </div>
         </div>
@@ -35,8 +35,8 @@ const Forestry = () => {
                     <TreePine className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Forest Management</h3>
-                    <p className="text-gray-600">Sustainable forest management and conservation practices.</p>
+                    <h3 className="text-lg font-semibold mb-2">Bamboo Cultivation</h3>
+                    <p className="text-gray-600">Sustainable bamboo plantation management and harvesting.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -44,17 +44,8 @@ const Forestry = () => {
                     <Leaf className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Biodiversity Conservation</h3>
-                    <p className="text-gray-600">Protection and preservation of forest ecosystems.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="p-2 bg-primary/10 rounded-lg">
-                    <Sprout className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold mb-2">Reforestation</h3>
-                    <p className="text-gray-600">Tree planting and forest restoration programs.</p>
+                    <h3 className="text-lg font-semibold mb-2">Product Manufacturing</h3>
+                    <p className="text-gray-600">Production of eco-friendly items including toothpicks and furniture.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -62,15 +53,15 @@ const Forestry = () => {
                     <Recycle className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Sustainable Harvesting</h3>
-                    <p className="text-gray-600">Responsible timber harvesting and processing.</p>
+                    <h3 className="text-lg font-semibold mb-2">Sustainable Practices</h3>
+                    <p className="text-gray-600">Eco-conscious manufacturing and waste management.</p>
                   </div>
                 </div>
               </div>
             </div>
             <div>
               <img 
-                src="/forestry-operations.jpg" 
+                src="/lovable-uploads/5da88ad1-c554-4fd5-8e04-fde1f0000327.png" 
                 alt="Forestry Operations"
                 className="rounded-lg shadow-lg w-full h-full object-cover"
               />
