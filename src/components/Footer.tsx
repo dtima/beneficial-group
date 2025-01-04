@@ -1,5 +1,5 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Facebook, Twitter, Linkedin, Share2, MessageCircle } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Share2, MessageCircle, Mail, Phone, MapPin } from "lucide-react";
 
 export const Footer = () => {
   const { t } = useLanguage();
@@ -47,10 +47,19 @@ export const Footer = () => {
           
           <div>
             <h3 className="text-xl font-bold mb-4">{t("nav.contact")}</h3>
-            <ul className="space-y-2">
-              <li>contact@beneficial.com</li>
-              <li>+1 234 567 890</li>
-              <li>123 Business Street</li>
+            <ul className="space-y-3">
+              <li className="flex items-center gap-2">
+                <Phone className="w-4 h-4" />
+                <span>+237 695 184 738</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Mail className="w-4 h-4" />
+                <span>ebenebot1978@gmail.com</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <MapPin className="w-4 h-4" />
+                <span>Kumba 1, MEME Division<br />South West Region</span>
+              </li>
             </ul>
           </div>
           
