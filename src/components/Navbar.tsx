@@ -1,5 +1,11 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Globe } from "lucide-react";
+import { Globe, ChevronDown } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export const Navbar = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -15,15 +21,38 @@ export const Navbar = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-secondary hover:text-primary transition-colors">
+            <a href="/" className="text-secondary hover:text-primary transition-colors">
               {t("nav.home")}
             </a>
             <a href="#about" className="text-secondary hover:text-primary transition-colors">
               {t("nav.about")}
             </a>
-            <a href="#services" className="text-secondary hover:text-primary transition-colors">
-              {t("nav.services")}
+            
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center text-secondary hover:text-primary transition-colors">
+                {t("nav.services")}
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem>
+                  <a href="/services/mining" className="w-full">Mining</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <a href="/services/transport" className="w-full">Transport</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <a href="/services/forestry" className="w-full">Forestry</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <a href="/services/agriculture" className="w-full">Agriculture</a>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <a href="/projects" className="text-secondary hover:text-primary transition-colors">
+              Projects
             </a>
+            
             <a href="#contact" className="text-secondary hover:text-primary transition-colors">
               {t("nav.contact")}
             </a>
