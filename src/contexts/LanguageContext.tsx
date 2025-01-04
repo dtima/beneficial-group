@@ -25,6 +25,8 @@ const translations = {
     "about.description": "Le Groupe Beneficial est un conglomérat diversifié offrant des solutions innovantes dans les secteurs miniers, du transport, de la foresterie et de l'agriculture.",
     "contact.title": "Contactez-nous",
     "contact.button": "Envoyer un message",
+    "footer.rights": "Tous droits réservés",
+    "footer.follow": "Suivez-nous",
   },
   en: {
     "nav.home": "Home",
@@ -42,13 +44,15 @@ const translations = {
     "about.description": "Beneficial Group is a diversified conglomerate providing innovative solutions in mining, transport, forestry, and agriculture sectors.",
     "contact.title": "Contact Us",
     "contact.button": "Send Message",
+    "footer.rights": "All rights reserved",
+    "footer.follow": "Follow us",
   },
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>("fr");
+  const [language, setLanguage] = useState<Language>("en"); // Changed default to "en"
 
   const t = (key: string): string => {
     return translations[language][key as keyof typeof translations.en] || key;

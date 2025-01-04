@@ -18,7 +18,7 @@ export const Hero = () => {
       
       <div className="absolute inset-0 -z-10">
         <img
-          src="/lovable-uploads/1e8ca0f9-8fa9-420a-9a2f-565bb69010aa.png"
+          src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
           alt="Hero Background"
           className="w-full h-full object-cover"
         />
