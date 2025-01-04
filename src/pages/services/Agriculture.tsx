@@ -1,7 +1,7 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Wheat, Seedling, Sun, Droplets } from "lucide-react";
+import { Wheat, Leaf, Sun, Droplets } from "lucide-react";
 
 const Agriculture = () => {
   const { t } = useLanguage();
@@ -41,7 +41,7 @@ const Agriculture = () => {
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="p-2 bg-primary/10 rounded-lg">
-                    <Seedling className="w-6 h-6 text-primary" />
+                    <Leaf className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Seed Management</h3>
