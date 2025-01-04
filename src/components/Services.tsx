@@ -1,5 +1,5 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Building2, Truck, Tree, Wheat } from "lucide-react";
+import { Building2, Truck, TreePine, Wheat } from "lucide-react";
 
 const ServiceCard = ({ 
   icon: Icon, 
@@ -34,7 +34,7 @@ export const Services = () => {
       description: "Professional transportation solutions for various industries.",
     },
     {
-      icon: Tree,
+      icon: TreePine,
       title: t("services.forestry"),
       description: "Sustainable forestry management and eco-conscious solutions.",
     },
