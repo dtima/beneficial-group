@@ -21,6 +21,24 @@ export const Partners = () => {
       name: "APME",
       logo: "/lovable-uploads/b4f4aa58-16d5-471d-8d9e-a5d6d706aba4.png",
       description: "Small and Medium-Sized Business Promotion Agency",
+    },
+    {
+      id: 4,
+      name: "SCB Cameroun",
+      logo: "/lovable-uploads/00951b83-93de-49ad-ac5f-9c7074c7ec9d.png",
+      description: "La Société Commerciale de Banque Cameroun",
+    },
+    {
+      id: 5,
+      name: "AFRICA CORPORATION SARL",
+      logo: "/lovable-uploads/c085e2a7-f385-4885-a269-29a1fd5a5a01.png",
+      description: "Spécialisé dans le transport logistique, location des engins miniers, Distribution des produits pétroliers et dérivées",
+    },
+    {
+      id: 6,
+      name: "Tankoil",
+      logo: "/lovable-uploads/28bde9d3-5f24-4acb-b161-677dd19f6652.png",
+      description: "Fournir des solutions énergétiques de qualité supérieure tout en mettant l'accent sur l'innovation, la durabilité et le service client",
     }
   ];
 
@@ -29,7 +47,7 @@ export const Partners = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-12">Our Partners</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {partners.map((partner) => (
             <div key={partner.id} className="flex flex-col items-center text-center">
               <div className="w-40 h-40 bg-white rounded-lg flex items-center justify-center mb-4 p-4">
