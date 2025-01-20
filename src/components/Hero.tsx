@@ -18,8 +18,8 @@ export const Hero = () => {
       
       <div className="absolute inset-0 -z-10">
         <img
-          src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
-          alt="Hero Background"
+          src="/lovable-uploads/3ea242aa-19b9-45a0-8638-8f12879c188b.png"
+          alt="Business handshake representing partnership and trust"
           className="w-full h-full object-cover"
         />
       </div>
