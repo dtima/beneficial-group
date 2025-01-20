@@ -7,25 +7,32 @@ export const FlashNews = () => {
   const news = [
     {
       id: 1,
-      title: "New Mining Project Launched",
+      title: "Kette Council Website Launch",
       date: "2024-02-20",
-      description: "Beneficial Group launches new sustainable mining initiative in the South West Region.",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81"
+      description: "Beneficial Solutions LLC participating in the Kette Council official website launch, providing technical support and expertise.",
+      image: "/lovable-uploads/f09b28bf-bbef-46e5-a665-503f74fff3e7.png"
     },
     {
       id: 2,
-      title: "Transport Fleet Expansion",
+      title: "Best Diplomat Event Representation",
       date: "2024-02-15",
-      description: "Our transport division adds 10 new vehicles to better serve our clients.",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+      description: "Beneficial Solutions LLC proudly representing Cameroon at the prestigious Best Diplomat event in Turkey.",
+      image: "/lovable-uploads/d88778e8-224a-445d-9046-022923d676a9.png"
     },
     {
       id: 3,
-      title: "Environmental Achievement",
+      title: "Cameroon Showcase in Turkey",
       date: "2024-02-10",
-      description: "Beneficial Group receives award for sustainable forestry practices.",
-      image: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c"
+      description: "Beneficial Solutions LLC showcasing Cameroon's potential and opportunities to participants at the Best Diplomat Event in Turkey.",
+      image: "/lovable-uploads/d60c33fc-7873-4076-941f-38781d2b5564.png"
     },
+    {
+      id: 4,
+      title: "APME Investment Presentation",
+      date: "2024-02-05",
+      description: "Beneficial Solutions LLC presenting toothpicks production project and investment opportunities at APME Yaounde, Cameroon.",
+      image: "/lovable-uploads/f447b304-2360-435c-a533-d5e368089f7a.png"
+    }
   ];
 
   return (
@@ -36,7 +43,7 @@ export const FlashNews = () => {
           <h2 className="text-2xl font-bold">Flash Info</h2>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {news.map((item) => (
             <div key={item.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
               <img 
@@ -47,7 +54,7 @@ export const FlashNews = () => {
               <div className="p-6">
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-500 mb-3">{item.date}</p>
-                <p className="text-gray-600">{item.description}</p>
+                <p className="text-gray-600 text-sm">{item.description}</p>
               </div>
             </div>
           ))}
