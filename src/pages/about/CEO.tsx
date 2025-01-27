@@ -15,8 +15,8 @@ const CEO = () => {
 
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <img
-              src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
-              alt="CEO"
+              src="/lovable-uploads/2662a24b-d2de-447c-95af-6be83e215776.png"
+              alt="CEO at a podium with US and diplomatic flags"
               className="w-full rounded-lg shadow-lg"
             />
             
