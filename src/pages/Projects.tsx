@@ -10,7 +10,7 @@ const Projects = () => {
       title: "Sustainable Bamboo Cultivation",
       category: "Agriculture & Manufacturing",
       description: "A comprehensive initiative focusing on sustainable bamboo cultivation and product diversification, creating employment opportunities while promoting environmental conservation.",
-      image: "https://images.unsplash.com/photo-1501854140801-50d01698950b",
+      image: "/lovable-uploads/a90ab736-6beb-481d-a94d-b55406aba214.png",
       details: {
         location: "Kumba 1, MEME Division - South West Region, Cameroon",
         investment: "$850,000",
@@ -29,7 +29,7 @@ const Projects = () => {
       title: "Toothpick Production Initiative",
       category: "Manufacturing",
       description: "An innovative manufacturing project producing high-quality wooden toothpicks to serve Cameroon's population and beyond, utilizing sustainable practices and automated systems.",
-      image: "https://images.unsplash.com/photo-1485833077593-4278bba3f11f",
+      image: "/lovable-uploads/cd43028e-7767-4a80-ae10-7dd2bfa4b20a.png",
       details: {
         location: "Cameroon",
         capacity: "1.5 million toothpicks per day",
