@@ -1,42 +1,35 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 import { LanguageProvider } from "./contexts/LanguageContext";
+import "./App.css";
 import Index from "./pages/Index";
-import Mining from "./pages/services/Mining";
-import Transport from "./pages/services/Transport";
-import Forestry from "./pages/services/Forestry";
-import Agriculture from "./pages/services/Agriculture";
-import CEO from "./pages/about/CEO";
-import Team from "./pages/about/Team";
 import Projects from "./pages/Projects";
+import Team from "./pages/about/Team";
+import CEO from "./pages/about/CEO";
+import Forestry from "./pages/services/Forestry";
+import Mining from "./pages/services/Mining";
+import Agriculture from "./pages/services/Agriculture";
+import Transport from "./pages/services/Transport";
 
-const queryClient = new QueryClient();
-
-const App = () => (
-  <LanguageProvider>
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
+const App = () => {
+  return (
+    <HelmetProvider>
+      <LanguageProvider>
         <BrowserRouter>
-          <Toaster />
-          <Sonner />
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/services/mining" element={<Mining />} />
-            <Route path="/services/transport" element={<Transport />} />
-            <Route path="/services/forestry" element={<Forestry />} />
-            <Route path="/services/agriculture" element={<Agriculture />} />
-            <Route path="/about/ceo" element={<CEO />} />
-            <Route path="/about/team" element={<Team />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="/about/team" element={<Team />} />
+            <Route path="/about/ceo" element={<CEO />} />
+            <Route path="/services/forestry" element={<Forestry />} />
+            <Route path="/services/mining" element={<Mining />} />
+            <Route path="/services/agriculture" element={<Agriculture />} />
+            <Route path="/services/transport" element={<Transport />} />
           </Routes>
         </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
-  </LanguageProvider>
-);
+      </LanguageProvider>
+    </HelmetProvider>
+  );
+};
 
 export default App;

@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Briefcase, TreePine, Factory, Users, Target, Leaf } from "lucide-react";
@@ -46,7 +47,13 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-accent">
+    <>
+      <Helmet>
+        <title>Our Projects - Beneficial Solutions</title>
+        <meta name="description" content="Explore our sustainable development projects including bamboo cultivation and toothpick production initiatives in Cameroon." />
+        <meta name="keywords" content="sustainable projects, bamboo cultivation, manufacturing, Cameroon development" />
+      </Helmet>
+      <div className="min-h-screen bg-accent">
       <Navbar />
       <main className="container mx-auto px-4 pt-24 pb-16">
         <div className="max-w-7xl mx-auto">
@@ -114,7 +121,8 @@ const Projects = () => {
         </div>
       </main>
       <Footer />
-    </div>
+      </div>
+    </>
   );
 };
 
