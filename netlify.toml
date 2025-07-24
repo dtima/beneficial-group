@@ -4,8 +4,7 @@
 
 [build.environment]
   NODE_VERSION = "18.20.8"
-  NPM_FLAGS = "--version"
-  NPM_VERSION = "10.8.2"
+  PNPM_VERSION = "10.7.0"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
