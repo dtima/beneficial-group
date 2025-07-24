@@ -10,10 +10,8 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Let the Netlify Next.js plugin handle routing automatically
+# The plugin will generate the necessary redirects for Next.js
 
 [[headers]]
   for = "/*"
