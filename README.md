@@ -1,69 +1,199 @@
-# Welcome to your Lovable project
+# Beneficial Group - Modern Diversified Platform
 
-## Project info
+A multi-faceted, mobile-first web platform designed to showcase and manage diversified operations in mining, transport, forestry, and agriculture across Cameroon and beyond.
 
-**URL**: https://lovable.dev/projects/0a256115-dd9a-4587-b0c8-70556ec8a259
+## 🚀 Features
 
-## How can I edit this code?
+- **Multi-Language Support**: English and French with seamless language switching
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Core Services**: Mining, Transport, Forestry, and Agriculture service pages
+- **Project Showcase**: Detailed pages for flagship initiatives
+- **Contact System**: Smart contact form with department routing
+- **WhatsApp Integration**: Direct communication via floating chat button
+- **Modern UI**: Built with Tailwind CSS and Font Awesome icons
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Internationalization**: next-intl
+- **Icons**: Font Awesome
+- **Fonts**: Inter and Playfair Display (Google Fonts)
+- **Package Manager**: pnpm
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0a256115-dd9a-4587-b0c8-70556ec8a259) and start prompting.
+## 📁 Project Structure
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── app/
+│   └── [locale]/           # Internationalized routes
+│       ├── about/          # About page
+│       ├── services/       # Services pages
+│       │   ├── mining/
+│       │   ├── transport/
+│       │   ├── forestry/
+│       │   └── agriculture/
+│       ├── projects/       # Projects showcase
+│       ├── contact/        # Contact page
+│       ├── layout.tsx      # Root layout
+│       └── page.tsx        # Homepage
+├── components/
+│   └── common/            # Reusable components
+│       ├── Navbar.tsx
+│       ├── Footer.tsx
+│       ├── Hero.tsx
+│       ├── FeaturedServices.tsx
+│       ├── Impact.tsx
+│       ├── ProjectsShowcase.tsx
+│       ├── FlashInfo.tsx
+│       ├── Partners.tsx
+│       └── WhatsAppButton.tsx
+├── lib/                   # Utility functions
+├── types/                 # TypeScript types
+└── config/               # Configuration files
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
 
-**Use GitHub Codespaces**
+- Node.js 18+ 
+- pnpm (recommended) or npm
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Installation
 
-## What technologies are used for this project?
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd beneficial-group
+```
 
-This project is built with .
+2. Install dependencies:
+```bash
+pnpm install
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. Run the development server:
+```bash
+pnpm dev
+```
 
-## How can I deploy this project?
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Simply open [Lovable](https://lovable.dev/projects/0a256115-dd9a-4587-b0c8-70556ec8a259) and click on Share -> Publish.
+### Available Scripts
 
-## I want to use a custom domain - is that possible?
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 🌍 Internationalization
+
+The application supports English and French languages:
+
+- **English**: `/en`
+- **French**: `/fr`
+
+Language switching is available via the navbar button.
+
+## 📱 Pages
+
+### Homepage (`/`)
+- Hero section with call-to-action
+- Featured services overview
+- Impact statistics
+- Projects showcase
+- Flash information
+- Partners section
+
+### About (`/about`)
+- CEO welcome message
+- Company vision
+- Management team profiles
+
+### Services (`/services`)
+- Overview of all services
+- Individual service pages:
+  - Mining (`/services/mining`)
+  - Transport (`/services/transport`)
+  - Forestry (`/services/forestry`)
+  - Agriculture (`/services/agriculture`)
+
+### Projects (`/projects`)
+- Sustainable Bamboo Cultivation
+- Toothpick Production Initiative
+
+### Contact (`/contact`)
+- Contact information
+- Smart contact form with department routing
+- WhatsApp integration
+
+## 🎨 Design System
+
+### Colors
+- Primary: Green (`#059669`)
+- Secondary: Gray scale
+- Accent: White and black
+
+### Typography
+- **Inter**: Body text and UI elements
+- **Playfair Display**: Headings and display text
+
+### Components
+- Responsive navigation with dropdown menus
+- Card-based layouts
+- Form components with validation
+- Floating WhatsApp button
+
+## 🔧 Configuration
+
+### Environment Variables
+Create a `.env.local` file for environment-specific configuration:
+
+```env
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+```
+
+### Tailwind Configuration
+Custom fonts and colors are configured in `tailwind.config.ts`.
+
+## 📦 Deployment
+
+### Vercel (Recommended)
+1. Connect your repository to Vercel
+2. Configure environment variables
+3. Deploy automatically on push
+
+### Netlify
+1. Build command: `pnpm build`
+2. Publish directory: `.next`
+3. Configure redirects for internationalization
+
+### Manual Deployment
+```bash
+pnpm build
+pnpm start
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
+## 📄 License
+
+This project is proprietary to Beneficial Group.
+
+## 📞 Contact
+
+- **Phone**: +237 695 184 738
+- **Email**: ebenebot1978@gmail.com
+- **Address**: Kumba 1, MEME Division, South West Region
+
+---
+
+Built with ❤️ for Beneficial Group

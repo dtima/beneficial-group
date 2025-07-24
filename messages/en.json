@@ -1,0 +1,688 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "news": "News"
+  },
+  "Hero": {
+    "badge": "Leading Sustainable Development in Africa",
+    "titleLine1": "Empowering Cameroon's Future",
+    "titleLine2": "Through Sustainable Innovation",
+    "subtitle": "A diversified conglomerate driving economic growth, environmental stewardship, and community development across mining, transport, forestry, and agriculture sectors.",
+    "stats": {
+      "jobs": "Jobs Created",
+      "sectors": "Core Sectors",
+      "partners": "Strategic Partners",
+      "founded": "Founded"
+    },
+    "cta": {
+      "primary": "Explore Our Solutions",
+      "secondary": "Meet Our Team"
+    }
+  },
+  "ValueProposition": {
+    "title": "Why Choose Beneficial Solutions LLC?",
+    "points": {
+      "trackRecord": {
+        "title": "Proven Track Record",
+        "description": "5+ years of sustainable business operations across multiple sectors"
+      },
+      "localExpertise": {
+        "title": "Local Expertise",
+        "description": "Deep understanding of Cameroon's unique challenges and opportunities"
+      },
+      "environmentalCommitment": {
+        "title": "Environmental Commitment",
+        "description": "All operations prioritize eco-friendly practices and resource conservation"
+      },
+      "communityImpact": {
+        "title": "Community Impact",
+        "description": "Creating 385+ direct and indirect jobs in the South West Region"
+      },
+      "governmentPartnership": {
+        "title": "Government Partnership",
+        "description": "Official recognition and support from the Prime Minister's Office"
+      }
+    }
+  },
+  "Services": {
+    "badge": "Comprehensive Solutions",
+    "title": "Comprehensive Solutions Across Key Sectors",
+    "subtitle": "Building a stronger future by diversifying our expertise across key industrial sectors. Explore our offerings below.",
+    "learnMore": "Learn More",
+    "viewAllServices": "View All Services",
+    "mining": {
+      "title": "Mining",
+      "description": "Sustainable artisanal mining with environmental responsibility",
+      "heroTitle": "Sustainable Mining Solutions for Cameroon's Future",
+      "serviceOverview": "Our mining division specializes in artisanal mining operations with a focus on sustainable practices and environmental responsibility. We believe that responsible resource extraction can coexist with environmental protection and community development.",
+      "keyOfferings": {
+        "title": "Our Key Offerings",
+        "artisanal-mining": {
+          "title": "Artisanal Mining",
+          "description": "Sustainable mining practices with environmental consideration"
+        },
+        "safety-standards": {
+          "title": "Safety Standards",
+          "description": "Rigorous safety protocols and industry best practices"
+        },
+        "resource-management": {
+          "title": "Resource Management",
+          "description": "Efficient resource utilization and environmental protection measures"
+        },
+        "community-engagement": {
+          "title": "Community Engagement",
+          "description": "Local employment and skills development programs"
+        }
+      },
+      "offerings": {
+        "title": "Our Key Offerings",
+        "subtitle": "Comprehensive mining solutions designed for sustainability and community development",
+        "artisanal-mining": {
+          "title": "Artisanal Mining",
+          "description": "Sustainable mining practices with environmental consideration"
+        },
+        "safety-standards": {
+          "title": "Safety Standards",
+          "description": "Rigorous safety protocols and industry best practices"
+        },
+        "resource-management": {
+          "title": "Resource Management",
+          "description": "Efficient resource utilization and environmental protection measures"
+        }
+      },
+      "cta": {
+        "title": "Ready to Partner with Us?",
+        "description": "Contact us today to discuss your mining project requirements and discover how we can help you achieve sustainable success.",
+        "button": "Get in Touch"
+      },
+      "whyChoose": {
+        "title": "Why Choose Our Mining Services",
+        "points": [
+          "Environmentally responsible practices",
+          "Strict safety protocols",
+          "Local community development",
+          "Sustainable resource management",
+          "Government compliance and certification"
+        ]
+      }
+    },
+    "transport": {
+      "title": "Transport",
+      "description": "Professional oil & gas logistics and project supply chains",
+      "heroTitle": "Professional Transportation Solutions Across Cameroon",
+      "serviceOverview": "Our transport division provides professional transportation solutions specializing in oil and gas logistics for local project supply chains across Cameroon. We ensure reliable, secure, and efficient delivery of critical resources.",
+      "keyOfferings": {
+        "title": "Our Key Offerings",
+        "oil-gas-logistics": {
+          "title": "Oil & Gas Logistics",
+          "description": "Specialized transportation for oil and gas industry supply chains"
+        },
+        "project-supply": {
+          "title": "Project Supply",
+          "description": "Reliable transportation solutions for local project requirements"
+        },
+        "secure-transport": {
+          "title": "Secure Transport",
+          "description": "Enhanced security measures for valuable cargo"
+        },
+        "custom-solutions": {
+          "title": "Custom Solutions",
+          "description": "Tailored transportation plans for specific project needs"
+        }
+      },
+      "offerings": {
+        "title": "Our Key Offerings",
+        "subtitle": "Professional transportation solutions designed for reliability and security",
+        "oil-gas-logistics": {
+          "title": "Oil & Gas Logistics",
+          "description": "Specialized transportation for oil and gas industry supply chains"
+        },
+        "project-supply-chains": {
+          "title": "Project Supply Chains",
+          "description": "Reliable transportation solutions for local project requirements"
+        },
+        "secure-transport": {
+          "title": "Secure Transport",
+          "description": "Enhanced security measures for valuable cargo"
+        }
+      },
+      "cta": {
+        "title": "Ready to Transport with Confidence?",
+        "description": "Contact us today to discuss your transportation needs and discover how we can provide reliable, secure logistics solutions.",
+        "button": "Get in Touch"
+      },
+      "whyChoose": {
+        "title": "Why Choose Our Transport Services",
+        "points": [
+          "Specialized oil & gas expertise",
+          "Enhanced security protocols",
+          "Reliable delivery timelines",
+          "Comprehensive insurance coverage",
+          "24/7 customer support"
+        ]
+      }
+    },
+    "forestry": {
+      "title": "Forestry",
+      "description": "Eco-conscious bamboo products and sustainable plantation management",
+      "heroTitle": "Sustainable Forestry and Eco-Conscious Products",
+      "serviceOverview": "Our forestry division focuses on sustainable bamboo plantation management and transformation into eco-conscious products. We're committed to environmental conservation while creating valuable products for local and international markets.",
+      "keyOfferings": {
+        "title": "Our Key Offerings",
+        "bamboo-cultivation": {
+          "title": "Bamboo Plantation Management",
+          "description": "Sustainable cultivation and harvesting practices"
+        },
+        "product-manufacturing": {
+          "title": "Product Manufacturing",
+          "description": "Eco-friendly products including toothpicks, furniture, and home apparel"
+        },
+        "environmental-conservation": {
+          "title": "Environmental Conservation",
+          "description": "Reforestation programs and biodiversity protection"
+        },
+        "youth-training": {
+          "title": "Youth Training",
+          "description": "Skills development programs in sustainable forestry practices"
+        }
+      },
+      "offerings": {
+        "title": "Our Key Offerings",
+        "subtitle": "Sustainable forestry solutions designed for environmental conservation and economic growth",
+        "bamboo-cultivation": {
+          "title": "Bamboo Plantation Management",
+          "description": "Sustainable cultivation and harvesting practices"
+        },
+        "product-manufacturing": {
+          "title": "Product Manufacturing",
+          "description": "Eco-friendly products including toothpicks, furniture, and home apparel"
+        },
+        "environmental-conservation": {
+          "title": "Environmental Conservation",
+          "description": "Reforestation programs and biodiversity protection"
+        }
+      },
+      "cta": {
+        "title": "Ready to Go Green with Us?",
+        "description": "Contact us today to discuss your forestry project requirements and discover how we can help you achieve sustainable success.",
+        "button": "Get in Touch"
+      },
+      "whyChoose": {
+        "title": "Why Choose Our Forestry Services",
+        "points": [
+          "Sustainable harvesting practices",
+          "Eco-friendly product manufacturing",
+          "Environmental conservation focus",
+          "Local employment creation",
+          "International quality standards"
+        ]
+      }
+    },
+    "agriculture": {
+      "title": "Agriculture",
+      "description": "Modern cassava cultivation and processing solutions",
+      "heroTitle": "Modern Agricultural Solutions for Sustainable Growth",
+      "serviceOverview": "Our agriculture division specializes in cassava cultivation and processing, providing innovative agricultural solutions for modern farming practices. We combine traditional knowledge with modern technology to maximize yields while protecting the environment.",
+      "keyOfferings": {
+        "title": "Our Key Offerings",
+        "cassava-cultivation": {
+          "title": "Cassava Cultivation",
+          "description": "Modern farming techniques for optimal cassava production"
+        },
+        "processing-solutions": {
+          "title": "Processing Solutions",
+          "description": "Advanced cassava processing and value addition"
+        },
+        "sustainable-farming": {
+          "title": "Sustainable Farming",
+          "description": "Environmentally responsible agricultural practices"
+        },
+        "training-programs": {
+          "title": "Training Programs",
+          "description": "Knowledge transfer to local farmers"
+        }
+      },
+      "offerings": {
+        "title": "Our Key Offerings",
+        "subtitle": "Modern agricultural solutions designed for sustainability and productivity",
+        "cassava-cultivation": {
+          "title": "Cassava Cultivation",
+          "description": "Modern farming techniques for optimal cassava production"
+        },
+        "processing-solutions": {
+          "title": "Processing Solutions",
+          "description": "Advanced cassava processing and value addition"
+        },
+        "sustainable-farming": {
+          "title": "Sustainable Farming",
+          "description": "Environmentally responsible agricultural practices"
+        }
+      },
+      "cta": {
+        "title": "Ready to Grow with Us?",
+        "description": "Contact us today to discuss your agricultural project requirements and discover how we can help you achieve sustainable success.",
+        "button": "Get in Touch"
+      },
+      "whyChoose": {
+        "title": "Why Choose Our Agriculture Services",
+        "points": [
+          "Modern farming techniques",
+          "Sustainable practices",
+          "Value-added processing",
+          "Local farmer training",
+          "Market access support"
+        ]
+      }
+    }
+  },
+  "Impact": {
+    "title": "Our Impact in Numbers",
+    "metrics": {
+      "jobs": "Direct & Indirect Jobs Created",
+      "years": "Years of Sustainable Operations",
+      "sectors": "Core Business Sectors",
+      "facility": "State-of-the-Art Manufacturing Facility",
+      "production": "Daily Production Capacity"
+    }
+  },
+  "Projects": {
+    "title": "Our Projects",
+    "subtitle": "Driving growth and innovation through ambitious, tangible initiatives that create lasting impact.",
+    "description": "Discover our innovative projects across various sectors",
+    "learnMore": "Learn More",
+    "viewAllProjects": "View All Projects",
+    "details": {
+      "location": "Location",
+      "scope": "Scope"
+    },
+    "Direct Jobs": "Direct Jobs",
+    "Indirect Jobs": "Indirect Jobs",
+    "Machine Operators": "Machine Operators",
+    "Quality Control": "Quality Control",
+    "Management": "Management",
+    "Supply Chain": "Supply Chain",
+    "bamboo-cultivation": {
+      "title": "Sustainable Bamboo Cultivation",
+      "location": "Kumba 1, MEME Division - South West Region, Cameroon",
+      "scope": "Comprehensive bamboo plantation management and eco-friendly product transformation",
+      "description": "A sustainable initiative focusing on bamboo cultivation and product diversification, creating employment opportunities while promoting environmental conservation.",
+      "stats": {
+        "jobs": "Jobs Created",
+        "investment": "FCFA Investment",
+        "launch": "Launch Year"
+      },
+      "goals": {
+        "title": "Key Goals",
+        "items": [
+          "Establish sustainable bamboo plantations",
+          "Expand product line (skewers, chopsticks, packaging)",
+          "Implement eco-friendly manufacturing",
+          "Provide youth training programs",
+          "Form strategic partnerships"
+        ]
+      },
+      "marketOpportunity": {
+        "title": "Market Opportunity",
+        "marketSize": "$3.2 million USD annually in sustainable products",
+        "growthProjection": "8% CAGR, reaching $5.2 million by 2030",
+        "productionCapacity": "500,000 sustainable products per month",
+        "targetMarkets": "Cameroon, Nigeria, Gabon, Equatorial Guinea, Chad"
+      },
+      "investmentDetails": {
+        "title": "Investment Details",
+        "totalInvestment": "45,000,000 FCFA",
+        "plantationDevelopment": "25,000,000 FCFA"
+      },
+      "jobCreation": {
+        "title": "Job Creation Impact",
+        "Direct Jobs": "Direct Jobs",
+        "Indirect Jobs": "Indirect Jobs"
+      },
+      "environmentalImpact": {
+        "title": "Environmental Impact",
+        "items": [
+          "Carbon sequestration through bamboo growth",
+          "Biodiversity preservation and habitat restoration",
+          "Waste reduction through sustainable practices",
+          "Local ecosystem enhancement"
+        ]
+      },
+      "partners": {
+        "title": "Strategic Partners"
+      }
+    },
+    "toothpick-production": {
+      "title": "Toothpick Manufacturing Plant",
+      "location": "Kumba 1, MEME Division - South West Region, Cameroon",
+      "scope": "High-quality, eco-friendly oral hygiene and food service products manufacturing",
+      "description": "State-of-the-art manufacturing facility producing premium toothpicks and related products using sustainable practices and local resources.",
+      "stats": {
+        "dailyProduction": "Daily Production",
+        "investment": "FCFA Investment",
+        "launch": "Launch Year"
+      },
+      "marketOpportunity": {
+        "title": "Market Opportunity",
+        "marketSize": "$5 million USD annually in Cameroon",
+        "growthProjection": "6% CAGR, reaching $7.5 million by 2030",
+        "productionCapacity": "1.5 million units per day",
+        "targetMarkets": "Cameroon, Nigeria, Gabon, Equatorial Guinea, Chad"
+      },
+      "investmentDetails": {
+        "title": "Investment Details",
+        "totalInvestment": "268,530,388 FCFA",
+        "facilityConstruction": "116,449,004 FCFA"
+      },
+      "projectTimeline": {
+        "title": "Project Timeline",
+        "phases": [
+          "Project Initiation (Sep 2023 - Jul 2025) - Completed",
+          "Pre-launch Preparation (Q3 2025) - Completed",
+          "Facility Setup (Q4 2025) - Ongoing",
+          "Commercial Production Launch (January 2026) - Pending",
+          "Market Expansion (Q2-Q4 2026) - Pending"
+        ]
+      },
+      "jobCreation": {
+        "title": "Job Creation Impact",
+        "Direct Jobs": "Direct Jobs",
+        "Indirect Jobs": "Indirect Jobs"
+      },
+      "sustainabilityFeatures": {
+        "title": "Sustainability Features",
+        "items": [
+          "Solar-powered manufacturing facility",
+          "Sustainably sourced bamboo and timber",
+          "Zero-waste production processes",
+          "No harmful chemicals or additives",
+          "Eco-friendly packaging and distribution"
+        ]
+      },
+      "partners": {
+        "title": "Strategic Partners"
+      }
+    }
+  },
+  "News": {
+    "badge": "Latest Updates",
+    "title": "Latest News and Updates",
+    "subtitle": "Stay updated with our latest achievements and developments",
+    "readMore": "Read More",
+    "viewAllNews": "View All News",
+    "newsletterStayUpdated": "Stay Updated",
+    "newsletterNeverMissUpdates": "Never Miss an Update",
+    "newsletterSubscribeDescription": "Subscribe to our newsletter to receive the latest news, project updates, and insights directly to your inbox.",
+    "newsletterEmailPlaceholder": "Enter your email address",
+    "newsletterSubscribeButton": "Subscribe",
+    "newsletterPrivacyDisclaimer": "We respect your privacy. Unsubscribe at any time.",
+    "callToActionWantToStayConnected": "Want to Stay Connected?",
+    "callToActionFollowUsDescription": "Follow us on social media and stay updated with our latest projects, achievements, and community impact.",
+    "callToActionGetInTouch": "Get in Touch",
+    "callToActionViewOurProjects": "View Our Projects",
+    "articles": {
+      "kette-council": {
+        "title": "Kette Council Website Launch",
+        "date": "February 20, 2024",
+        "description": "Beneficial Solutions LLC participated in the Kette Council official website launch, providing technical support and expertise. This collaboration demonstrates our commitment to supporting local government initiatives and digital transformation in Cameroon."
+      },
+      "best-diplomat": {
+        "title": "Best Diplomat Event Representation",
+        "date": "February 15, 2024",
+        "description": "Beneficial Solutions LLC proudly represented Cameroon at the prestigious Best Diplomat event in Turkey. This international platform allowed us to showcase Cameroon's potential and opportunities to global investors and business leaders."
+      },
+      "cameroon-showcase": {
+        "title": "Cameroon Showcase in Turkey",
+        "date": "February 10, 2024",
+        "description": "Our team successfully showcased Cameroon's potential and opportunities to participants at the Best Diplomat Event in Turkey. This presentation highlighted our country's investment opportunities and sustainable development initiatives."
+      },
+      "domax-machinery-meeting": {
+        "title": "Meeting with Chinese partners from DOMAX Machinery",
+        "date": "May 21, 2025",
+        "description": "Beneficial Solutions LLC held a productive meeting with Chinese partners from DOMAX Machinery (Henan Duomai Machinery) to discuss manufacturing equipment and technology partnerships for our sustainable development projects."
+      }
+    }
+  },
+  "Partners": {
+    "badge": "Strategic Partnerships",
+    "title": "Our Trusted Partners",
+    "subtitle": "Collaborating with leading organizations to drive sustainable development and create lasting impact across Cameroon and beyond.",
+    "categories": {
+      "government": "Government",
+      "financial": "Financial",
+      "business": "Business"
+    },
+    "partnershipStatus": "Active Partnership",
+    "cta": {
+      "text": "Interested in partnering with us?",
+      "button": "Get in Touch"
+    }
+  },
+  "About": {
+    "title": "About Beneficial Solutions LLC",
+    "subtitle": "Building a Sustainable Future Since 2019",
+    "companyStory": {
+      "title": "Building a Sustainable Future Since 2019",
+      "content": "Founded by visionary entrepreneur Eben Ebot Flavius, Beneficial Solutions LLC emerged from a deep understanding of Cameroon's unique challenges and opportunities. What began as a passion for sustainable development and youth empowerment has grown into a diversified conglomerate operating across four key sectors. Our journey started with a simple yet powerful vision: to create business solutions that don't just generate profit, but also protect our environment, empower our communities, and build a sustainable future for generations to come. Today, we're proud to operate across multiple regions of Cameroon with a team of over 20 dedicated professionals, each committed to our mission of driving positive change through innovative, eco-friendly solutions."
+    },
+    "ceoMessage": {
+      "title": "A Message from Our CEO",
+      "quote": "Welcome to Beneficial Solutions LLC. As the CEO, I am proud to lead a company that puts sustainability and community development at the forefront of everything we do. Our commitment to responsible business practices in mining, transport, forestry, and agriculture continues to drive positive change in the South West Region.",
+      "bio": "Eben Ebot Flavius brings over 15 years of diverse experience across sales, management, administration, and leadership. His international experience includes roles at Total Petro station in Kumba, Nista Digital Technology Co. Ltd in China, and Meng Cheng Mining in Bertoua. Fluent in English, French, and Chinese, Eben's multicultural background enables him to navigate complex international markets while maintaining deep local connections."
+    },
+    "leadershipTeam": {
+      "title": "Meet Our Leadership Team",
+      "subtitle": "Our team is composed of passionate, experienced professionals leading our charge in every sector."
+    },
+    "companyValues": {
+      "title": "Our Core Values Drive Everything We Do",
+      "values": {
+        "excellence": {
+          "title": "Excellence",
+          "description": "We strive to deliver high-quality products and services that meet the needs and expectations of our clients and stakeholders"
+        },
+        "diversity": {
+          "title": "Diversity",
+          "description": "We respect and value the diversity of our employees, partners, and communities, promoting inclusion and collaboration"
+        },
+        "sustainability": {
+          "title": "Sustainability",
+          "description": "We are committed to protecting the environment and natural resources for present and future generations"
+        },
+        "responsibility": {
+          "title": "Responsibility",
+          "description": "We are accountable for our actions and decisions, complying with all applicable laws and regulations"
+        }
+      }
+    },
+    "values": {
+      "title": "Our Core Values Drive Everything We Do",
+      "subtitle": "These fundamental principles guide every decision we make and every action we take",
+      "excellence": {
+        "title": "Excellence",
+        "description": "We strive to deliver high-quality products and services that meet the needs and expectations of our clients and stakeholders"
+      },
+      "diversity": {
+        "title": "Diversity",
+        "description": "We respect and value the diversity of our employees, partners, and communities, promoting inclusion and collaboration"
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "We are committed to protecting the environment and natural resources for present and future generations"
+      },
+      "responsibility": {
+        "title": "Responsibility",
+        "description": "We are accountable for our actions and decisions, complying with all applicable laws and regulations"
+      }
+    },
+    "team": {
+      "title": "Meet Our Leadership Team",
+      "subtitle": "Our team is composed of passionate, experienced professionals leading our charge in every sector"
+    }
+  },
+  "FeaturedServices": {
+    "badge": "Comprehensive Solutions",
+    "title": "Comprehensive Solutions Across Key Sectors",
+    "subtitle": "Building a stronger future by diversifying our expertise across key industrial sectors. Explore our offerings below.",
+    "learnMore": "Learn More",
+    "viewAllServices": "View All Services",
+    "mining": {
+      "title": "Mining",
+      "description": "Sustainable artisanal mining with environmental responsibility"
+    },
+    "transport": {
+      "title": "Transport",
+      "description": "Professional oil & gas logistics and project supply chains"
+    },
+    "forestry": {
+      "title": "Forestry",
+      "description": "Eco-conscious bamboo products and sustainable plantation management"
+    },
+    "agriculture": {
+      "title": "Agriculture",
+      "description": "Modern cassava cultivation and processing solutions"
+    }
+  },
+  "ProjectsShowcase": {
+    "badge": "Flagship Initiatives",
+    "title": "Our Flagship Projects",
+    "subtitle": "Driving growth and innovation through ambitious, real-world initiatives that create lasting impact.",
+    "learnMore": "Learn More",
+    "viewAllProjects": "View All Projects",
+    "bamboo-cultivation": {
+      "title": "Sustainable Bamboo Cultivation",
+      "category": "Forestry & Sustainability",
+      "location": "Kumba 1, MEME Division",
+      "investment": "Multi-million FCFA",
+      "description": "Our flagship bamboo cultivation project in Kumba 1, MEME Division represents a comprehensive initiative focusing on sustainable bamboo cultivation and product diversification. This project creates employment opportunities while promoting environmental conservation."
+    },
+    "toothpick-production": {
+      "title": "Toothpick Production Initiative",
+      "category": "Manufacturing & Innovation",
+      "scope": "National/International",
+      "description": "Solar-powered automated manufacturing facility producing high-quality, eco-friendly toothpicks for national and international markets. This export-oriented project highlights our dedication to innovation and quality control."
+    }
+  },
+  "NewsPreview": {
+    "badge": "Latest Updates",
+    "title": "Latest News & Updates",
+    "subtitle": "Stay informed about our latest achievements, partnerships, and project developments.",
+    "readMore": "Read More",
+    "viewAllNews": "View All News",
+    "articles": {
+      "kette-council": {
+        "title": "Kette Council Website Launch",
+        "date": "February 20, 2024",
+        "description": "Beneficial Solutions LLC participating in the Kette Council official website launch, providing technical support and expertise."
+      },
+      "best-diplomat": {
+        "title": "Best Diplomat Event Representation",
+        "date": "February 15, 2024",
+        "description": "Beneficial Solutions LLC proudly representing Cameroon at the prestigious Best Diplomat event in Turkey."
+      },
+      "cameroon-showcase": {
+        "title": "Cameroon Showcase in Turkey",
+        "date": "February 10, 2024",
+        "description": "Beneficial Solutions LLC showcasing Cameroon's potential and opportunities to participants at the Best Diplomat Event in Turkey."
+      },
+      "domax-machinery-meeting": {
+        "title": "Meeting with Chinese partners from DOMAX Machinery",
+        "date": "May 21, 2025",
+        "description": "Beneficial Solutions LLC held a productive meeting with Chinese partners from DOMAX Machinery (Henan Duomai Machinery) to discuss manufacturing equipment and technology partnerships for our sustainable development projects."
+      }
+    }
+  },
+  "Contact": {
+    "badge": "Get in Touch",
+    "title": "Get in Touch with Beneficial Solutions LLC",
+    "subtitle": "Ready to start a conversation? We're here to help with all your inquiries about our services and projects.",
+    "contactInfo": {
+      "title": "Contact Information",
+      "phone": {
+        "title": "Phone"
+      },
+      "email": {
+        "title": "Email"
+      },
+      "address": {
+        "title": "Address",
+        "value": "Kumba 1, MEME Division, South West Region, Cameroon"
+      },
+      "businessHours": {
+        "title": "Business Hours",
+        "value": "Monday - Friday, 8:00 AM - 6:00 PM (WAT)"
+      }
+    },
+    "whatsapp": {
+      "title": "Quick Chat on WhatsApp",
+      "description": "For immediate assistance or quick questions, reach out to us directly on WhatsApp.",
+      "cta": "Chat on WhatsApp"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "subtitle": "Fill out the form below and we'll get back to you as soon as possible.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "selectSubject": "Select a subject",
+      "preferredContact": "Preferred Contact Method",
+      "selectMethod": "Select contact method",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your inquiry...",
+      "subjects": {
+        "general": "General Inquiry",
+        "partnership": "Business Partnership",
+        "investment": "Investment Opportunity",
+        "media": "Media Inquiry",
+        "other": "Other"
+      },
+      "contactMethods": {
+        "email": "Email",
+        "phone": "Phone"
+      },
+      "submit": "Send Message"
+    },
+    "officeLocation": {
+      "title": "Visit Our Headquarters",
+      "description": "Our main office is located in Kumba 1, MEME Division, South West Region, Cameroon. We also have operations across multiple regions of Cameroon to better serve our clients and partners."
+    }
+  },
+  "Footer": {
+    "description": "Innovative Solutions for a Sustainable Future. We are committed to driving economic growth, environmental stewardship, and community development across Cameroon and beyond.",
+    "contact": {
+      "address": "Kumba 1, MEME Division, South West Region, Cameroon",
+      "phone": "+237 695 184 738",
+      "email": "ebenebot1978@gmail.com"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Our Services",
+      "mining": "Mining Solutions",
+      "transport": "Transport Services",
+      "forestry": "Forestry Management",
+      "agriculture": "Agricultural Services"
+    },
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved."
+  },
+  "Error": {
+    "title": "Something went wrong",
+    "description": "We encountered an unexpected error. Please try again or contact us if the problem persists.",
+    "showDetails": "Show Error Details",
+    "tryAgain": "Try Again",
+    "goHome": "Go to Homepage"
+  }
+} 

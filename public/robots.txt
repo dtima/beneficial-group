@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://beneficialsolutions.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow important pages
+Allow: /en/
+Allow: /fr/
+Allow: /services/
+Allow: /projects/
+Allow: /about/
+Allow: /contact/
+Allow: /news/
+
+# Block common bot patterns
+User-agent: *
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /search? 

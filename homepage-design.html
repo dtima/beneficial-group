@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficial Group - Homepage Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Custom styles for better aesthetics */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap');
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .icon-box {
+            transition: all 0.3s ease-in-out;
+        }
+        .icon-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 
+      INTEGRATION NOTES FOR NEXT.JS:
+      - This is a static HTML file for design preview. For Next.js, you'll break this down into components (e.g., Navbar, Hero, Services, Footer).
+      - The main content can go into `app/(site)/[locale]/page.tsx`.
+      - Install Tailwind CSS in your Next.js project.
+      - Replace placeholder images (`https://...`) with Next.js <Image> components for optimization.
+      - Icons from Font Awesome are used here for simplicity. You can use an icon library like `react-icons`.
+      - The custom font is linked from Google Fonts. In Next.js, you'd use `next/font`.
+    -->
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <a href="#" class="text-2xl font-bold text-gray-900">Beneficial Group</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-gray-600 hover:text-green-700 transition">Home</a>
+                <a href="#" class="text-gray-600 hover:text-green-700 transition">About</a>
+                <div class="relative group">
+                    <a href="#" class="text-gray-600 hover:text-green-700 transition">Services <i class="fas fa-chevron-down text-xs"></i></a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50">Mining</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50">Transport</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50">Forestry</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50">Agriculture</a>
+                    </div>
+                </div>
+                <a href="#" class="text-gray-600 hover:text-green-700 transition">Projects</a>
+                <a href="#" class="text-gray-600 hover:text-green-700 transition">Contact</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-green-700">EN/FR</a>
+                <a href="#" class="bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800 transition shadow">Get in Touch</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white">
+            <div class="bg-black bg-opacity-50 min-h-[70vh] flex items-center">
+                <div class="container mx-auto px-6 text-center">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-4 leading-tight">Innovative Solutions for a Sustainable Future</h1>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200">
+                        Powering progress in Cameroon through responsible mining, transport, forestry, and agriculture.
+                    </p>
+                    <div class="mt-8">
+                        <a href="#" class="bg-white text-green-700 font-bold px-8 py-4 rounded-full hover:bg-gray-200 transition text-lg">Discover Our Impact</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Services Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-2">Our Core Services</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">We are building a stronger future by diversifying our expertise across key industrial sectors.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Mining -->
+                    <div class="icon-box bg-gray-50 p-8 rounded-lg text-center shadow-sm hover:shadow-xl">
+                        <i class="fas fa-gem text-4xl text-green-700 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Mining</h3>
+                        <p class="text-gray-600">Sustainable artisanal mining with a focus on community and environmental protection.</p>
+                    </div>
+                    <!-- Transport -->
+                    <div class="icon-box bg-gray-50 p-8 rounded-lg text-center shadow-sm hover:shadow-xl">
+                        <i class="fas fa-truck-fast text-4xl text-green-700 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Transport</h3>
+                        <p class="text-gray-600">Reliable oil & gas logistics and secure supply chain solutions for major projects.</p>
+                    </div>
+                    <!-- Forestry -->
+                    <div class="icon-box bg-gray-50 p-8 rounded-lg text-center shadow-sm hover:shadow-xl">
+                        <i class="fas fa-tree text-4xl text-green-700 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Forestry</h3>
+                        <p class="text-gray-600">Eco-friendly bamboo cultivation and transformation into sustainable products.</p>
+                    </div>
+                    <!-- Agriculture -->
+                    <div class="icon-box bg-gray-50 p-8 rounded-lg text-center shadow-sm hover:shadow-xl">
+                        <i class="fas fa-leaf text-4xl text-green-700 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Agriculture</h3>
+                        <p class="text-gray-600">Modern cassava farming and processing, adding value to local agriculture.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section class="bg-green-700 text-white py-16">
+            <div class="container mx-auto px-6">
+                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <p class="text-5xl font-bold">385+</p>
+                        <p class="text-green-200 mt-2">Direct & Indirect Jobs Created</p>
+                    </div>
+                     <div>
+                        <p class="text-5xl font-bold">4</p>
+                        <p class="text-green-200 mt-2">Core Business Verticals</p>
+                    </div>
+                    <div>
+                        <p class="text-5xl font-bold">100%</p>
+                        <p class="text-green-200 mt-2">Commitment to Sustainability</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projects Showcase -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-2">Flagship Projects</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Driving growth and innovation through ambitious, real-world initiatives.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="rounded-lg overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1593351449392-9a4f41a4645a?q=80&w=1974&auto=format&fit=crop" alt="Bamboo Forest" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4">Sustainable Bamboo Cultivation</h3>
+                        <p class="text-gray-600 mb-6">Located in the Kumba 1, MEME Division, our bamboo project is a cornerstone of our commitment to eco-friendly manufacturing, creating jobs and high-quality products like skewers and chopsticks for national and international markets.</p>
+                        <a href="#" class="text-green-700 font-bold hover:underline">Learn More <i class="fas fa-arrow-right text-sm"></i></a>
+                    </div>
+                </div>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-16">
+                    <div class="md:order-2 rounded-lg overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1629188827827-de7447271805?q=80&w=1964&auto=format&fit=crop" alt="Toothpick Production" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:order-1">
+                        <h3 class="text-3xl font-bold mb-4">Toothpick Production Initiative</h3>
+                        <p class="text-gray-600 mb-6">Our national initiative leverages solar-powered, automated manufacturing to produce high-quality, sustainable toothpicks. This export-oriented project highlights our dedication to innovation and quality control.</p>
+                        <a href="#" class="text-green-700 font-bold hover:underline">Learn More <i class="fas fa-arrow-right text-sm"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flash Info -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-2">Flash Info</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">The latest news and milestones from Beneficial Group.</p>
+                </div>
+                <div class="max-w-4xl mx-auto">
+                    <div class="border-l-2 border-green-700 pl-8 space-y-10">
+                        <div class="relative">
+                            <div class="absolute -left-[38px] top-1 w-4 h-4 bg-green-700 rounded-full"></div>
+                            <p class="text-sm text-gray-500">2024-02-20</p>
+                            <h4 class="font-bold text-xl">Kette Council Website Launch</h4>
+                            <p class="text-gray-600">Provided support and expertise for the successful launch.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-[38px] top-1 w-4 h-4 bg-green-700 rounded-full"></div>
+                            <p class="text-sm text-gray-500">2024-02-15</p>
+                            <h4 class="font-bold text-xl">Best Diplomat Event Representation</h4>
+                            <p class="text-gray-600">Proudly represented Cameroon's interests in Turkey.</p>
+                        </div>
+                         <div class="relative">
+                            <div class="absolute -left-[38px] top-1 w-4 h-4 bg-green-700 rounded-full"></div>
+                            <p class="text-sm text-gray-500">2024-02-05</p>
+                            <h4 class="font-bold text-xl">APME Investment Presentation</h4>
+                            <p class="text-gray-600">Presented our toothpick production initiative in Yaounde.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Partners -->
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <h2 class="text-center text-3xl font-bold text-gray-800 mb-8">Our Trusted Partners</h2>
+                <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
+                    <p class="font-semibold text-gray-600">AcDiToPush</p>
+                    <p class="font-semibold text-gray-600">MINPMEESA</p>
+                    <p class="font-semibold text-gray-600">APME</p>
+                    <p class="font-semibold text-gray-600">SCB Cameroun</p>
+                    <p class="font-semibold text-gray-600">AFRICA CORPORATION SARL</p>
+                    <p class="font-semibold text-gray-600">Tankoil</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Beneficial Group</h4>
+                    <p class="text-gray-400">Innovative Solutions for a Sustainable Future.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Projects</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                     <p class="text-gray-400">Kumba 1, MEME Division, South West Region</p>
+                     <p class="text-gray-400 mt-2">ebenebot1978@gmail.com</p>
+                     <p class="text-gray-400 mt-2">+237 695 184 738</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest projects and news.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded-l-md text-gray-800">
+                        <button class="bg-green-700 text-white px-4 py-2 rounded-r-md hover:bg-green-800">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 Beneficial Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/237695184738" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+</body>
+</html> 

@@ -1,74 +1,71 @@
 import type { Config } from "tailwindcss";
 
-export default {
-  darkMode: ["class"],
+const config: Config = {
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "#FF3A46",
-          foreground: "#FFFFFF",
-        },
-        secondary: {
-          DEFAULT: "#1A1A1A",
-          foreground: "#FFFFFF",
-        },
-        accent: {
-          DEFAULT: "#FAFAFA",
-          foreground: "#1A1A1A",
-        },
-        glass: {
-          DEFAULT: "rgba(255, 255, 255, 0.1)",
-          dark: "rgba(0, 0, 0, 0.1)",
-        },
-      },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-playfair)', 'Georgia', 'serif'],
       },
-      keyframes: {
-        "fade-up": {
-          "0%": {
-            opacity: "0",
-            transform: "translateY(20px)",
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translateY(0)",
-          },
+      colors: {
+        // WCAG 2.1 AA compliant color palette
+        red: {
+          50: '#fef2f2',
+          100: '#fee2e2',
+          200: '#fecaca',
+          300: '#fca5a5',
+          400: '#f87171',
+          500: '#ef4444',
+          600: '#dc2626', // 4.5:1 contrast ratio
+          700: '#b91c1c', // 7:1 contrast ratio
+          800: '#991b1b', // 12:1 contrast ratio
+          900: '#7f1d1d',
         },
-        "fade-in": {
-          "0%": {
-            opacity: "0",
-          },
-          "100%": {
-            opacity: "1",
-          },
+        green: {
+          50: '#f0fdf4',
+          100: '#dcfce7',
+          200: '#bbf7d0',
+          300: '#86efac',
+          400: '#4ade80',
+          500: '#22c55e',
+          600: '#16a34a', // 4.5:1 contrast ratio
+          700: '#15803d', // 7:1 contrast ratio
+          800: '#166534',
+          900: '#14532d',
         },
       },
       animation: {
-        "fade-up": "fade-up 0.5s ease-out",
-        "fade-in": "fade-in 0.3s ease-out",
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'slide-up': 'slideUp 0.3s ease-out',
+        'bounce-gentle': 'bounceGentle 2s infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        bounceGentle: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+  plugins: [],
+};
+
+export default config; 

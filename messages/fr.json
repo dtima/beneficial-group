@@ -1,0 +1,638 @@
+{
+  "Navbar": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "projects": "Projets",
+    "contact": "Contact",
+    "news": "Actualités"
+  },
+  "Hero": {
+    "badge": "Leader du Développement Durable en Afrique",
+    "titleLine1": "Solutions Innovantes",
+    "titleLine2": "pour un Avenir Durable",
+    "subtitle": "Nous sommes un conglomérat diversifié fournissant des solutions innovantes dans les secteurs minier, transport, foresterie et agriculture au Cameroun et au-delà.",
+    "stats": {
+      "jobs": "Emplois Créés",
+      "sectors": "Secteurs Clés",
+      "partners": "Partenaires Stratégiques",
+      "founded": "Fondé"
+    },
+    "cta": {
+      "primary": "Explorer Nos Services",
+      "secondary": "Voir Nos Projets"
+    }
+  },
+  "About": {
+    "title": "À Propos de Beneficial Solutions LLC",
+    "subtitle": "Construire un Avenir Durable Depuis 2019",
+    "companyStory": {
+      "title": "Construire un Avenir Durable Depuis 2019",
+      "content": "Fondée par l'entrepreneur visionnaire Eben Ebot Flavius, Beneficial Solutions LLC est née d'une compréhension approfondie des défis et opportunités uniques du Cameroun. Ce qui a commencé comme une passion pour le développement durable et l'autonomisation des jeunes s'est transformé en un conglomérat diversifié opérant dans quatre secteurs clés. Notre voyage a commencé avec une vision simple mais puissante : créer des solutions commerciales qui ne génèrent pas seulement des profits, mais protègent aussi notre environnement, autonomisent nos communautés et construisent un avenir durable pour les générations à venir. Aujourd'hui, nous sommes fiers d'opérer dans plusieurs régions du Cameroun avec une équipe de plus de 20 professionnels dévoués, chacun engagé dans notre mission de stimuler le changement positif grâce à des solutions innovantes et écologiques."
+    },
+    "ceoMessage": {
+      "title": "Un Message de Notre PDG",
+      "quote": "Bienvenue chez Beneficial Solutions LLC. En tant que PDG, je suis fier de diriger une entreprise qui met la durabilité et le développement communautaire au premier plan de tout ce que nous faisons. Notre engagement envers des pratiques commerciales responsables dans les mines, le transport, la foresterie et l'agriculture continue de stimuler le changement positif dans la Région du Sud-Ouest.",
+      "bio": "Eben Ebot Flavius apporte plus de 15 ans d'expérience diverse dans les ventes, la gestion, l'administration et le leadership. Son expérience internationale comprend des rôles chez Total Petro station à Kumba, Nista Digital Technology Co. Ltd en Chine, et Meng Cheng Mining à Bertoua. Parlant couramment l'anglais, le français et le chinois, le bagage multiculturel d'Eben lui permet de naviguer dans des marchés internationaux complexes tout en maintenant des connexions locales profondes."
+    },
+    "leadershipTeam": {
+      "title": "Rencontrez Notre Équipe de Direction",
+      "subtitle": "Notre équipe est composée de professionnels passionnés et expérimentés qui mènent notre action dans chaque secteur."
+    },
+    "companyValues": {
+      "title": "Nos Valeurs Fondamentales Animent Tout Ce Que Nous Faisons",
+      "values": {
+        "excellence": {
+          "title": "Excellence",
+          "description": "Nous nous efforçons de fournir des produits et services de haute qualité qui répondent aux besoins et attentes de nos clients et parties prenantes"
+        },
+        "diversity": {
+          "title": "Diversité",
+          "description": "Nous respectons et valorisons la diversité de nos employés, partenaires et communautés, promouvant l'inclusion et la collaboration"
+        },
+        "sustainability": {
+          "title": "Durabilité",
+          "description": "Nous nous engageons à protéger l'environnement et les ressources naturelles pour les générations présentes et futures"
+        },
+        "responsibility": {
+          "title": "Responsabilité",
+          "description": "Nous sommes responsables de nos actions et décisions, respectant toutes les lois et réglementations applicables"
+        }
+      }
+    },
+    "values": {
+      "title": "Nos Valeurs Fondamentales Animent Tout Ce Que Nous Faisons",
+      "subtitle": "Ces principes fondamentaux guident chaque décision que nous prenons et chaque action que nous entreprenons",
+      "excellence": {
+        "title": "Excellence",
+        "description": "Nous nous efforçons de fournir des produits et services de haute qualité qui répondent aux besoins et attentes de nos clients et parties prenantes"
+      },
+      "diversity": {
+        "title": "Diversité",
+        "description": "Nous respectons et valorisons la diversité de nos employés, partenaires et communautés, promouvant l'inclusion et la collaboration"
+      },
+      "sustainability": {
+        "title": "Durabilité",
+        "description": "Nous nous engageons à protéger l'environnement et les ressources naturelles pour les générations présentes et futures"
+      },
+      "responsibility": {
+        "title": "Responsabilité",
+        "description": "Nous sommes responsables de nos actions et décisions, respectant toutes les lois et réglementations applicables"
+      }
+    },
+    "team": {
+      "title": "Rencontrez Notre Équipe de Direction",
+      "subtitle": "Notre équipe est composée de professionnels passionnés et expérimentés qui mènent notre action dans chaque secteur"
+    }
+  },
+  "Services": {
+    "badge": "Secteurs d'Activité Principaux",
+    "title": "Nos Services Principaux",
+    "subtitle": "Construire un avenir plus solide en diversifiant notre expertise dans des secteurs industriels clés. Découvrez nos offres ci-dessous.",
+    "learnMore": "En Savoir Plus",
+    "viewAllServices": "Voir Tous les Services",
+    "mining": {
+      "title": "Exploitation Minière",
+      "description": "Exploitation minière artisanale durable axée sur la communauté et la protection de l'environnement.",
+      "serviceOverview": "Nous nous spécialisons dans l'exploitation minière artisanale durable au Cameroun, en veillant à ce que nos opérations non seulement produisent des ressources précieuses, mais aussi soutiennent les communautés locales et respectent les normes environnementales les plus strictes. Notre approche est collaborative, transparente et conçue pour un impact positif à long terme.",
+      "keyOfferings": {
+        "title": "Nos Offres Clés",
+        "artisanal-mining": {
+          "title": "Exploitation Minière Artisanale",
+          "description": "Des modèles centrés sur la communauté qui autonomisent les mineurs locaux et garantissent des pratiques justes et éthiques."
+        },
+        "safety-standards": {
+          "title": "Normes de Sécurité",
+          "description": "Mise en œuvre de protocoles de sécurité rigoureux et de formations pour protéger notre personnel et nos partenaires."
+        },
+        "resource-management": {
+          "title": "Gestion des Ressources",
+          "description": "Gestion stratégique et responsable des ressources minérales pour maximiser la valeur et minimiser les déchets."
+        }
+      },
+      "offerings": {
+        "title": "Nos Offres Clés",
+        "subtitle": "Solutions minières complètes conçues pour la durabilité et le développement communautaire",
+        "artisanal-mining": {
+          "title": "Exploitation Minière Artisanale",
+          "description": "Des modèles centrés sur la communauté qui autonomisent les mineurs locaux et garantissent des pratiques justes et éthiques."
+        },
+        "safety-standards": {
+          "title": "Normes de Sécurité",
+          "description": "Mise en œuvre de protocoles de sécurité rigoureux et de formations pour protéger notre personnel et nos partenaires."
+        },
+        "resource-management": {
+          "title": "Gestion des Ressources",
+          "description": "Gestion stratégique et responsable des ressources minérales pour maximiser la valeur et minimiser les déchets."
+        }
+      },
+      "cta": {
+        "title": "Prêt à Partenariat avec Nous ?",
+        "description": "Contactez-nous aujourd'hui pour discuter de vos besoins en projets miniers et découvrir comment nous pouvons vous aider à réussir de manière durable.",
+        "button": "Nous Contacter"
+      },
+      "projectGallery": {
+        "title": "Galerie de Projets",
+        "subtitle": "Photos et vidéos de haute qualité de nos opérations communautaires en action."
+      }
+    },
+    "transport": {
+      "title": "Transport",
+      "description": "Logistique pétrolière et gazière fiable et solutions de chaîne d'approvisionnement sécurisées pour les grands projets.",
+      "serviceOverview": "Nous fournissons des solutions de transport et de logistique spécialisées pour des secteurs exigeants comme le pétrole et le gaz et les grands projets d'infrastructure. Notre flotte est moderne, nos chauffeurs sont expérimentés et notre engagement envers la sécurité et la ponctualité est inébranlable.",
+      "keyOfferings": {
+        "title": "Nos Offres Clés",
+        "oil-gas-logistics": {
+          "title": "Logistique Pétrolière et Gazière",
+          "description": "Transport sécurisé et efficace pour le secteur de l'énergie, respectant les normes les plus élevées de l'industrie."
+        },
+        "project-supply-chains": {
+          "title": "Chaînes d'Approvisionnement de Projets",
+          "description": "Gestion de bout en bout de la chaîne d'approvisionnement pour les projets de construction et d'infrastructure à grande échelle."
+        },
+        "secure-transport": {
+          "title": "Systèmes de Transport Sécurisés",
+          "description": "Systèmes avancés et sécurisés pour assurer la livraison sûre et ponctuelle des actifs de grande valeur."
+        }
+      },
+      "offerings": {
+        "title": "Nos Offres Clés",
+        "subtitle": "Solutions de transport professionnelles conçues pour la fiabilité et la sécurité",
+        "oil-gas-logistics": {
+          "title": "Logistique Pétrolière et Gazière",
+          "description": "Transport sécurisé et efficace pour le secteur de l'énergie, respectant les normes les plus élevées de l'industrie."
+        },
+        "project-supply-chains": {
+          "title": "Chaînes d'Approvisionnement de Projets",
+          "description": "Gestion de bout en bout de la chaîne d'approvisionnement pour les projets de construction et d'infrastructure à grande échelle."
+        },
+        "secure-transport": {
+          "title": "Systèmes de Transport Sécurisés",
+          "description": "Systèmes avancés et sécurisés pour assurer la livraison sûre et ponctuelle des actifs de grande valeur."
+        }
+      },
+      "cta": {
+        "title": "Prêt à Transporter avec Confiance ?",
+        "description": "Contactez-nous aujourd'hui pour discuter de vos besoins en transport et découvrir comment nous pouvons fournir des solutions logistiques fiables et sécurisées.",
+        "button": "Nous Contacter"
+      },
+      "bookingForm": {
+        "title": "Demander des Services de Transport",
+        "subtitle": "Besoin d'une logistique fiable pour votre prochain projet ? Contactez notre équipe pour créer une solution sur mesure.",
+        "cta": "Réservez Maintenant"
+      }
+    },
+    "forestry": {
+      "title": "Foresterie",
+      "description": "Culture écologique du bambou et sa transformation en produits durables.",
+      "serviceOverview": "Notre division forestière est dédiée à la culture durable du bambou et à sa transformation en produits écologiques. Nous gérons de vastes plantations et utilisons des techniques innovantes pour créer des produits de haute qualité comme des cure-dents, des meubles et des articles ménagers, promouvant une économie verte.",
+      "keyOfferings": {
+        "title": "Nos Offres Clés",
+        "bamboo-cultivation": {
+          "title": "Culture du Bambou",
+          "description": "Culture de bambou à grande échelle et durable qui soutient la biodiversité et les économies locales."
+        },
+        "product-manufacturing": {
+          "title": "Fabrication de Produits",
+          "description": "Transformation du bambou brut en une large gamme de produits de consommation et industriels précieux et écologiques."
+        },
+        "eco-practices": {
+          "title": "Pratiques Écologiques",
+          "description": "Un engagement envers la réduction des déchets, la compensation carbone et des opérations respectueuses de l'environnement."
+        }
+      },
+      "offerings": {
+        "title": "Nos Offres Clés",
+        "subtitle": "Solutions forestières durables conçues pour la conservation environnementale et la croissance économique",
+        "bamboo-cultivation": {
+          "title": "Culture du Bambou",
+          "description": "Culture de bambou à grande échelle et durable qui soutient la biodiversité et les économies locales."
+        },
+        "product-manufacturing": {
+          "title": "Fabrication de Produits",
+          "description": "Transformation du bambou brut en une large gamme de produits de consommation et industriels précieux et écologiques."
+        },
+        "environmental-conservation": {
+          "title": "Conservation Environnementale",
+          "description": "Programmes de reboisement et protection de la biodiversité"
+        }
+      },
+      "cta": {
+        "title": "Prêt à Devenir Vert avec Nous ?",
+        "description": "Contactez-nous aujourd'hui pour discuter de vos besoins en projets forestiers et découvrir comment nous pouvons vous aider à réussir de manière durable.",
+        "button": "Nous Contacter"
+      },
+      "productCatalog": {
+        "title": "Voir Nos Produits",
+        "subtitle": "Découvrez notre catalogue de produits en bambou durables et de haute qualité. Commandez via WhatsApp pour un service direct.",
+        "cta": "Parcourir le Catalogue"
+      }
+    },
+    "agriculture": {
+      "title": "Agriculture",
+      "description": "Culture moderne du manioc et sa transformation, ajoutant de la valeur à l'agriculture locale.",
+      "serviceOverview": "Nous révolutionnons la culture du manioc dans la région grâce à des techniques de culture modernes et des solutions de transformation innovantes. Notre objectif est d'améliorer la sécurité alimentaire, de créer des opportunités économiques pour les agriculteurs locaux et d'ajouter une valeur significative à la chaîne d'approvisionnement agricole.",
+      "keyOfferings": {
+        "title": "Nos Offres Clés",
+        "cassava-cultivation": {
+          "title": "Culture Moderne du Manioc",
+          "description": "Utilisation des meilleures pratiques et technologies pour augmenter le rendement et la qualité des cultures de manioc."
+        },
+        "advanced-processing": {
+          "title": "Solutions de Transformation Avancées",
+          "description": "Transformation du manioc brut en produits à valeur ajoutée comme le garri, la farine et l'amidon pour les marchés locaux et internationaux."
+        },
+        "sustainable-farming": {
+          "title": "Agriculture Durable",
+          "description": "Promotion de techniques agricoles respectueuses de l'environnement qui améliorent la santé des sols et assurent une productivité à long terme."
+        }
+      },
+      "offerings": {
+        "title": "Nos Offres Clés",
+        "subtitle": "Solutions agricoles modernes conçues pour la durabilité et la productivité",
+        "cassava-cultivation": {
+          "title": "Culture Moderne du Manioc",
+          "description": "Utilisation des meilleures pratiques et technologies pour augmenter le rendement et la qualité des cultures de manioc."
+        },
+        "processing-solutions": {
+          "title": "Solutions de Transformation",
+          "description": "Transformation avancée du manioc et ajout de valeur"
+        },
+        "sustainable-farming": {
+          "title": "Agriculture Durable",
+          "description": "Pratiques agricoles respectueuses de l'environnement"
+        }
+      },
+      "cta": {
+        "title": "Prêt à Croître avec Nous ?",
+        "description": "Contactez-nous aujourd'hui pour discuter de vos besoins en projets agricoles et découvrir comment nous pouvons vous aider à réussir de manière durable.",
+        "button": "Nous Contacter"
+      },
+      "valueChain": {
+        "title": "Notre Chaîne de Valeur",
+        "subtitle": "Un aperçu de notre processus intégré, de la ferme au produit final."
+      }
+    }
+  },
+  "Projects": {
+    "badge": "Initiatives Phares",
+    "title": "Nos Projets Phares",
+    "subtitle": "Stimuler la croissance et l'innovation grâce à des initiatives ambitieuses et concrètes qui créent un impact durable.",
+    "learnMore": "En savoir plus",
+    "viewAllProjects": "Voir Tous les Projets",
+    "details": {
+      "location": "Lieu",
+      "scope": "Portée"
+    },
+    "Direct Jobs": "Emplois Directs",
+    "Indirect Jobs": "Emplois Indirects",
+    "Machine Operators": "Opérateurs de Machines",
+    "Quality Control": "Contrôle Qualité",
+    "Management": "Gestion",
+    "Supply Chain": "Chaîne d'Approvisionnement",
+    "bamboo-cultivation": {
+      "title": "Transformer le Bambou en Opportunité Économique",
+      "location": "Kumba 1, Division de la MEME - Région du Sud-Ouest, Cameroun",
+      "scope": "Culture durable du bambou et diversification des produits",
+      "employment": "385 Emplois Directs et Indirects",
+      "investment": "Initiative de développement durable multi-millions FCFA",
+      "description": "Notre projet phare de culture du bambou à Kumba 1, Division de la MEME représente une initiative complète axée sur la culture durable du bambou et la diversification des produits. Ce projet crée des opportunités d'emploi tout en promouvant la conservation de l'environnement.",
+      "goals": {
+        "title": "Objectifs Clés",
+        "items": [
+          "Établir des plantations de bambou durables",
+          "Étendre la gamme de produits (brochettes, baguettes, emballages)",
+          "Mettre en œuvre des processus de fabrication écologiques",
+          "Fournir des programmes de formation pour les jeunes",
+          "Former des partenariats stratégiques"
+        ]
+      },
+      "environmentalImpact": {
+        "title": "Impact Environnemental",
+        "items": [
+          "Séquestration du carbone grâce à la culture du bambou",
+          "Réduction de la pression de déforestation",
+          "Gestion durable des ressources",
+          "Conservation de la biodiversité"
+        ]
+      },
+      "partners": {
+        "title": "Partenaires Stratégiques"
+      }
+    },
+    "toothpick-production": {
+      "title": "Usine de Fabrication de Cure-dents",
+      "location": "Kumba 1, Division de la MEME - Région du Sud-Ouest, Cameroun",
+      "scope": "Fabrication de produits d'hygiène bucco-dentaire et de service alimentaire de haute qualité et écologiques",
+      "description": "Beneficial Solutions LLC est positionnée pour devenir le premier fabricant de produits d'hygiène bucco-dentaire et de service alimentaire de haute qualité et écologiques en Afrique Centrale et de l'Ouest. Notre installation de production de pointe au Cameroun capturera une part significative des marchés nationaux et régionaux.",
+      "marketOpportunity": {
+        "title": "Opportunité de Marché",
+        "marketSize": "5 millions USD annuellement au Cameroun",
+        "growthProjection": "6% TCAC, atteignant 7,5 millions USD d'ici 2030",
+        "productionCapacity": "1,5 million d'unités par jour",
+        "targetMarkets": "Cameroun, Nigeria, Gabon, Guinée Équatoriale, Tchad"
+      },
+      "investmentDetails": {
+        "title": "Détails de l'Investissement",
+        "totalInvestment": "268 530 388 FCFA",
+        "facilityConstruction": "116 449 004 FCFA",
+        "operationalCosts": "152 081 384 FCFA",
+        "projectedRevenue": "2,24 milliards FCFA (2026)",
+        "projectedProfit": "811 millions FCFA (2026)"
+      },
+      "projectTimeline": {
+        "title": "Calendrier du Projet",
+        "phases": [
+          "Initiation du Projet (Sep 2023 – Jul 2025) - Terminé",
+          "Préparation Pré-lancement (Q3 2025) - Terminé",
+          "Configuration de l'Installation (Q4 2025) - En Cours",
+          "Lancement Commercial (Janvier 2026) - En Attente",
+          "Expansion du Marché (Q2-Q4 2026) - En Attente"
+        ]
+      },
+      "jobCreation": {
+        "title": "Impact de Création d'Emplois",
+        "directJobs": "100 postes à temps plein (Année 1-2)",
+        "breakdown": {
+          "men": "50 Jeunes Hommes (opérateurs de machines, logistique)",
+          "women": "40 Jeunes Femmes (admin, marketing, contrôle qualité)",
+          "disabilities": "10 Jeunes avec Handicaps (saisie de données, service client)"
+        },
+        "indirectJobs": "1000+ grâce aux programmes de petits agriculteurs et micro-entreprises"
+      },
+      "sustainabilityFeatures": {
+        "title": "Caractéristiques de Durabilité",
+        "items": [
+          "Installation de fabrication alimentée à l'énergie solaire",
+          "Matériaux locaux d'origine durable",
+          "Solutions d'emballage écologiques",
+          "Processus de production zéro déchet",
+          "Opérations neutres en carbone"
+        ]
+      },
+      "partners": {
+        "title": "Partenaires Stratégiques"
+      },
+      "financialPartners": {
+        "title": "Partenaires Financiers",
+        "subtitle": "Partenariats bancaires stratégiques soutenant nos initiatives de croissance",
+        "laregionale": {
+          "name": "LA REGIONALE BANK",
+          "description": "Partenaire bancaire de confiance fournissant des services financiers complets et un soutien pour nos besoins de fabrication et opérationnels. Notre partenariat assure une gestion financière sécurisée et un capital de croissance pour les projets de développement durable.",
+          "services": [
+            "Services bancaires d'entreprise",
+            "Financement d'investissement",
+            "Solutions de financement du commerce",
+            "Soutien consultatif financier"
+          ]
+        }
+      }
+    }
+  },
+  "ValueProposition": {
+    "title": "Pourquoi Choisir Beneficial Solutions LLC ?",
+    "points": {
+      "trackRecord": {
+        "title": "Antécédents Prouvés",
+        "description": "5+ années d'opérations commerciales durables dans plusieurs secteurs"
+      },
+      "localExpertise": {
+        "title": "Expertise Locale",
+        "description": "Compréhension approfondie des défis et opportunités uniques du Cameroun"
+      },
+      "environmentalCommitment": {
+        "title": "Engagement Environnemental",
+        "description": "Toutes les opérations priorisent les pratiques écologiques et la conservation des ressources"
+      },
+      "communityImpact": {
+        "title": "Impact Communautaire",
+        "description": "Création de 385+ emplois directs et indirects dans la Région du Sud-Ouest"
+      },
+      "governmentPartnership": {
+        "title": "Partenariat Gouvernemental",
+        "description": "Reconnaissance et soutien officiels du Bureau du Premier Ministre"
+      }
+    }
+  },
+  "Impact": {
+    "title": "Notre Impact en Chiffres",
+    "metrics": {
+      "jobs": "Emplois Directs et Indirects Créés",
+      "years": "Années d'Opérations Durables",
+      "sectors": "Secteurs d'Activité Principaux",
+      "facility": "Installation de Fabrication de Pointe",
+      "production": "Capacité de Production Quotidienne"
+    }
+  },
+  "News": {
+    "badge": "Dernières Mises à Jour",
+    "title": "Dernières Actualités et Mises à Jour",
+    "subtitle": "Restez informé de nos dernières réalisations et développements",
+    "readMore": "Lire Plus",
+    "viewAllNews": "Voir Toutes les Actualités",
+    "newsletterStayUpdated": "Restez Informé",
+    "newsletterNeverMissUpdates": "Ne Manquez Jamais une Mise à Jour",
+    "newsletterSubscribeDescription": "Abonnez-vous à notre newsletter pour recevoir les dernières actualités, mises à jour de projets et insights directement dans votre boîte de réception.",
+    "newsletterEmailPlaceholder": "Entrez votre adresse email",
+    "newsletterSubscribeButton": "S'abonner",
+    "newsletterPrivacyDisclaimer": "Nous respectons votre vie privée. Désabonnez-vous à tout moment.",
+    "callToActionWantToStayConnected": "Voulez-vous Rester Connecté ?",
+    "callToActionFollowUsDescription": "Suivez-nous sur les réseaux sociaux et restez informé de nos derniers projets, réalisations et impact communautaire.",
+    "callToActionGetInTouch": "Nous Contacter",
+    "callToActionViewOurProjects": "Voir Nos Projets",
+    "articles": {
+      "kette-council": {
+        "title": "Lancement du Site Web du Conseil de Kette",
+        "date": "20 Février 2024",
+        "description": "Beneficial Solutions LLC a participé au lancement officiel du site web du Conseil de Kette, fournissant un soutien technique et une expertise. Cette collaboration démontre notre engagement à soutenir les initiatives gouvernementales locales et la transformation numérique au Cameroun."
+      },
+      "best-diplomat": {
+        "title": "Représentation à l'Événement Best Diplomat",
+        "date": "15 Février 2024",
+        "description": "Beneficial Solutions LLC a fièrement représenté le Cameroun lors du prestigieux événement Best Diplomat en Turquie. Cette plateforme internationale nous a permis de présenter le potentiel et les opportunités du Cameroun aux investisseurs et dirigeants d'entreprise mondiaux."
+      },
+      "cameroon-showcase": {
+        "title": "Présentation du Cameroun en Turquie",
+        "date": "10 Février 2024",
+        "description": "Notre équipe a présenté avec succès le potentiel et les opportunités du Cameroun aux participants de l'Événement Best Diplomat en Turquie. Cette présentation a mis en évidence les opportunités d'investissement de notre pays et les initiatives de développement durable."
+      },
+      "domax-machinery-meeting": {
+        "title": "Réunion avec les partenaires chinois de DOMAX Machinery",
+        "date": "21 Mai 2025",
+        "description": "Beneficial Solutions LLC a tenu une réunion productive avec les partenaires chinois de DOMAX Machinery (Henan Duomai Machinery) pour discuter des équipements de fabrication et des partenariats technologiques pour nos projets de développement durable."
+      }
+    }
+  },
+  "Partners": {
+    "title": "Nos Partenaires et Collaborateurs de Confiance",
+    "subtitle": "Partenariats stratégiques stimulant le développement durable à travers le Cameroun",
+    "categories": {
+      "government": "Partenaires Gouvernementaux",
+      "financial": "Partenaires Financiers",
+      "business": "Partenaires Commerciaux"
+    },
+    "benefits": {
+      "title": "Avantages du Partenariat",
+      "sharedExpertise": "Expertise Partagée - Tirer parti des connaissances et expériences combinées",
+      "resourceOptimization": "Optimisation des Ressources - Maximiser l'efficacité grâce à la collaboration stratégique",
+      "marketExpansion": "Expansion du Marché - Accéder à de nouveaux marchés et opportunités",
+      "innovation": "Innovation - Co-développer des solutions de pointe",
+      "sustainability": "Durabilité - Engagement conjoint envers la responsabilité environnementale et sociale"
+    }
+  },
+  "FeaturedServices": {
+    "badge": "Solutions Complètes",
+    "title": "Solutions Complètes à Travers les Secteurs Clés",
+    "subtitle": "Construire un avenir plus fort en diversifiant notre expertise à travers les secteurs industriels clés. Explorez nos offres ci-dessous.",
+    "learnMore": "En Savoir Plus",
+    "viewAllServices": "Voir Tous les Services",
+    "mining": {
+      "title": "Exploitation Minière",
+      "description": "Exploitation minière artisanale durable avec responsabilité environnementale"
+    },
+    "transport": {
+      "title": "Transport",
+      "description": "Logistique professionnelle pétrole et gaz et chaînes d'approvisionnement de projets"
+    },
+    "forestry": {
+      "title": "Foresterie",
+      "description": "Produits en bambou écologiques et gestion durable des plantations"
+    },
+    "agriculture": {
+      "title": "Agriculture",
+      "description": "Cultivation moderne du manioc et solutions de transformation"
+    }
+  },
+  "ProjectsShowcase": {
+    "badge": "Initiatives Phares",
+    "title": "Nos Projets Phares",
+    "subtitle": "Stimuler la croissance et l'innovation à travers des initiatives ambitieuses et réelles qui créent un impact durable.",
+    "learnMore": "En Savoir Plus",
+    "viewAllProjects": "Voir Tous les Projets",
+    "bamboo-cultivation": {
+      "title": "Cultivation Durable du Bambou",
+      "category": "Foresterie et Durabilité",
+      "location": "Kumba 1, Division MEME",
+      "investment": "Multi-million FCFA",
+      "description": "Notre projet phare de cultivation du bambou à Kumba 1, Division MEME représente une initiative complète axée sur la cultivation durable du bambou et la diversification des produits. Ce projet crée des opportunités d'emploi tout en promouvant la conservation environnementale."
+    },
+    "toothpick-production": {
+      "title": "Initiative de Production de Cure-dents",
+      "category": "Fabrication et Innovation",
+      "scope": "National/International",
+      "description": "Installation de fabrication automatisée alimentée par l'énergie solaire produisant des cure-dents de haute qualité et écologiques pour les marchés nationaux et internationaux. Ce projet orienté vers l'exportation met en évidence notre dévouement à l'innovation et au contrôle qualité."
+    }
+  },
+  "NewsPreview": {
+    "badge": "Dernières Mises à Jour",
+    "title": "Dernières Actualités et Mises à Jour",
+    "subtitle": "Restez informé de nos dernières réalisations, partenariats et développements de projets.",
+    "readMore": "Lire Plus",
+    "viewAllNews": "Voir Toutes les Actualités",
+    "articles": {
+      "kette-council": {
+        "title": "Lancement du Site Web du Conseil Kette",
+        "date": "20 Février 2024",
+        "description": "Beneficial Solutions LLC participant au lancement officiel du site web du Conseil Kette, fournissant un support technique et une expertise."
+      },
+      "best-diplomat": {
+        "title": "Représentation à l'Événement Best Diplomat",
+        "date": "15 Février 2024",
+        "description": "Beneficial Solutions LLC représentant fièrement le Cameroun au prestigieux événement Best Diplomat en Turquie."
+      },
+      "cameroon-showcase": {
+        "title": "Présentation du Cameroun en Turquie",
+        "date": "10 Février 2024",
+        "description": "Beneficial Solutions LLC présentant le potentiel et les opportunités du Cameroun aux participants de l'Événement Best Diplomat en Turquie."
+      },
+      "domax-machinery-meeting": {
+        "title": "Réunion avec les partenaires chinois de DOMAX Machinery",
+        "date": "21 Mai 2025",
+        "description": "Beneficial Solutions LLC a tenu une réunion productive avec les partenaires chinois de DOMAX Machinery (Henan Duomai Machinery) pour discuter des équipements de fabrication et des partenariats technologiques pour nos projets de développement durable."
+      }
+    }
+  },
+  "Contact": {
+    "badge": "Nous Contacter",
+    "title": "Contactez Beneficial Solutions LLC",
+    "subtitle": "Prêt à entamer une conversation ? Nous sommes là pour vous aider avec toutes vos questions sur nos services et projets.",
+    "contactInfo": {
+      "title": "Informations de Contact",
+      "phone": {
+        "title": "Téléphone"
+      },
+      "email": {
+        "title": "Email"
+      },
+      "address": {
+        "title": "Adresse",
+        "value": "Kumba 1, Division de la MEME, Région du Sud-Ouest, Cameroun"
+      },
+      "businessHours": {
+        "title": "Heures d'Ouverture",
+        "value": "Lundi - Vendredi, 8h00 - 18h00 (WAT)"
+      }
+    },
+    "whatsapp": {
+      "title": "Chat Rapide sur WhatsApp",
+      "description": "Pour une assistance immédiate ou des questions rapides, contactez-nous directement sur WhatsApp.",
+      "cta": "Chatter sur WhatsApp"
+    },
+    "form": {
+      "title": "Envoyez-nous un Message",
+      "subtitle": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.",
+      "firstName": "Prénom",
+      "lastName": "Nom de Famille",
+      "email": "Adresse Email",
+      "phone": "Numéro de Téléphone",
+      "subject": "Sujet",
+      "selectSubject": "Sélectionnez un sujet",
+      "preferredContact": "Méthode de Contact Préférée",
+      "selectMethod": "Sélectionnez la méthode de contact",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous de votre demande...",
+      "subjects": {
+        "general": "Demande Générale",
+        "partnership": "Partenariat Commercial",
+        "investment": "Opportunité d'Investissement",
+        "media": "Demande Média",
+        "other": "Autre"
+      },
+      "contactMethods": {
+        "email": "Email",
+        "phone": "Téléphone"
+      },
+      "submit": "Envoyer le Message"
+    },
+    "officeLocation": {
+      "title": "Visitez Notre Siège Social",
+      "description": "Notre bureau principal est situé à Kumba 1, Division de la MEME, Région du Sud-Ouest, Cameroun. Nous avons également des opérations dans plusieurs régions du Cameroun pour mieux servir nos clients et partenaires."
+    }
+  },
+  "Footer": {
+    "description": "Solutions Innovantes pour un Avenir Durable. Nous nous engageons à stimuler la croissance économique, la gestion environnementale et le développement communautaire à travers le Cameroun et au-delà.",
+    "contact": {
+      "address": "Kumba 1, Division de la MEME, Région du Sud-Ouest, Cameroun",
+      "phone": "+237 695 184 738",
+      "email": "ebenebot1978@gmail.com"
+    },
+    "quickLinks": {
+      "title": "Liens Rapides",
+      "home": "Accueil",
+      "about": "À Propos",
+      "services": "Services",
+      "projects": "Projets",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Nos Services",
+      "mining": "Solutions Minières",
+      "transport": "Services de Transport",
+      "forestry": "Gestion Forestière",
+      "agriculture": "Services Agricoles"
+    },
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "rights": "Tous droits réservés."
+  }
+} 
