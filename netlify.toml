@@ -6,7 +6,11 @@
   NODE_VERSION = "18.20.8"
   PNPM_VERSION = "10.7.0"
 
-# Basic static hosting - no plugin needed
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Let the Netlify Next.js plugin handle routing automatically
+# The plugin will generate the necessary redirects for Next.js
 
 [[headers]]
   for = "/*"
