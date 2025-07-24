@@ -16,6 +16,8 @@
   "dependencies": {
     "@headlessui/react": "^2.2.5",
     "@hookform/resolvers": "^5.1.1",
+    "@netlify/blobs": "^10.0.7",
+    "@netlify/functions": "^4.1.15",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.7",
     "next": "15.4.3",
