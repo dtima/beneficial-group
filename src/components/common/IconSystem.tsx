@@ -23,7 +23,7 @@ const iconMap: Record<string, string> = {
   projects: 'fa-solid fa-project-diagram',
   news: 'fa-solid fa-newspaper',
   contact: 'fa-solid fa-envelope',
-  
+
   // Actions
   arrowRight: 'fa-solid fa-arrow-right',
   arrowLeft: 'fa-solid fa-arrow-left',
@@ -31,14 +31,17 @@ const iconMap: Record<string, string> = {
   folder: 'fa-solid fa-folder-open',
   rocket: 'fa-solid fa-rocket',
   eye: 'fa-solid fa-eye',
-  
+  refreshCw: 'fa-solid fa-rotate',
+  alertCircle: 'fa-solid fa-circle-exclamation',
+  alertTriangle: 'fa-solid fa-triangle-exclamation',
+
   // Business
   handshake: 'fa-solid fa-handshake',
   building: 'fa-solid fa-building',
   university: 'fa-solid fa-university',
   landmark: 'fa-solid fa-landmark',
   check: 'fa-solid fa-check',
-  
+
   // Services
   gem: 'fa-solid fa-gem',
   truck: 'fa-solid fa-truck-fast',
@@ -51,7 +54,7 @@ const iconMap: Record<string, string> = {
   seedling: 'fa-solid fa-seedling',
   blender: 'fa-solid fa-blender',
   tractor: 'fa-solid fa-tractor',
-  
+
   // UI Elements
   calendar: 'fa-solid fa-calendar-alt',
   tag: 'fa-solid fa-tag',
@@ -59,23 +62,23 @@ const iconMap: Record<string, string> = {
   paperPlane: 'fa-solid fa-paper-plane',
   phone: 'fa-solid fa-phone',
   mapMarker: 'fa-solid fa-map-marker-alt',
-  
+
   // Charts & Data
   chartPie: 'fa-solid fa-chart-pie',
   trendingUp: 'fa-solid fa-trending-up',
   industry: 'fa-solid fa-industry',
   globe: 'fa-solid fa-globe',
   moneyBill: 'fa-solid fa-money-bill-wave',
-  
+
   // Users & Network
   users: 'fa-solid fa-users',
   network: 'fa-solid fa-network-wired',
-  
+
   // Sustainability
   cloud: 'fa-solid fa-cloud',
   solarPanel: 'fa-solid fa-solar-panel',
   ban: 'fa-solid fa-ban',
-  
+
   // Social
   whatsapp: 'fab fa-whatsapp',
   facebook: 'fab fa-facebook',
@@ -84,19 +87,19 @@ const iconMap: Record<string, string> = {
   instagram: 'fab fa-instagram',
 };
 
-export default function Icon({ 
-  name, 
-  size = 'md', 
-  className = '', 
-  ariaLabel 
+export default function Icon({
+  name,
+  size = 'md',
+  className = '',
+  ariaLabel,
 }: IconProps) {
   const iconClass = iconMap[name];
-  
+
   if (!iconClass) {
     console.warn(`Icon "${name}" not found in icon system`);
     return (
-      <div 
-        className={`${iconSizeClasses[size]} ${className} bg-gray-300 rounded animate-pulse`}
+      <div
+        className={`${iconSizeClasses[size]} ${className} animate-pulse rounded bg-gray-300`}
         aria-label={ariaLabel || `Missing icon: ${name}`}
         role="img"
       />
@@ -104,7 +107,7 @@ export default function Icon({
   }
 
   return (
-    <i 
+    <i
       className={`${iconClass} ${iconSizeClasses[size]} ${className}`}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}
@@ -129,7 +132,7 @@ export const IconComponents = {
   Projects: createIconComponent('projects'),
   News: createIconComponent('news'),
   Contact: createIconComponent('contact'),
-  
+
   // Actions
   ArrowRight: createIconComponent('arrowRight'),
   ArrowLeft: createIconComponent('arrowLeft'),
@@ -137,14 +140,17 @@ export const IconComponents = {
   Folder: createIconComponent('folder'),
   Rocket: createIconComponent('rocket'),
   Eye: createIconComponent('eye'),
-  
+  RefreshCw: createIconComponent('refreshCw'),
+  AlertCircle: createIconComponent('alertCircle'),
+  AlertTriangle: createIconComponent('alertTriangle'),
+
   // Business
   Handshake: createIconComponent('handshake'),
   Building: createIconComponent('building'),
   University: createIconComponent('university'),
   Landmark: createIconComponent('landmark'),
   Check: createIconComponent('check'),
-  
+
   // Services
   Gem: createIconComponent('gem'),
   Truck: createIconComponent('truck'),
@@ -157,7 +163,7 @@ export const IconComponents = {
   Seedling: createIconComponent('seedling'),
   Blender: createIconComponent('blender'),
   Tractor: createIconComponent('tractor'),
-  
+
   // UI Elements
   Calendar: createIconComponent('calendar'),
   Tag: createIconComponent('tag'),
@@ -165,23 +171,23 @@ export const IconComponents = {
   PaperPlane: createIconComponent('paperPlane'),
   Phone: createIconComponent('phone'),
   MapMarker: createIconComponent('mapMarker'),
-  
+
   // Charts & Data
   ChartPie: createIconComponent('chartPie'),
   TrendingUp: createIconComponent('trendingUp'),
   Industry: createIconComponent('industry'),
   Globe: createIconComponent('globe'),
   MoneyBill: createIconComponent('moneyBill'),
-  
+
   // Users & Network
   Users: createIconComponent('users'),
   Network: createIconComponent('network'),
-  
+
   // Sustainability
   Cloud: createIconComponent('cloud'),
   SolarPanel: createIconComponent('solarPanel'),
   Ban: createIconComponent('ban'),
-  
+
   // Social
   WhatsApp: createIconComponent('whatsapp'),
   Facebook: createIconComponent('facebook'),
@@ -191,4 +197,4 @@ export const IconComponents = {
 } as const;
 
 // ✅ Create and export a type representing all possible icon names
-export type IconName = keyof typeof IconComponents; 
+export type IconName = keyof typeof IconComponents;

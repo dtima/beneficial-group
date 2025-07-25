@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 interface PerformanceMetrics {
   fcp: number | null;
@@ -32,6 +32,22 @@ interface PerformanceData {
     downlink: number;
     rtt: number;
   } | null;
+}
+
+interface ConnectionInfo {
+  effectiveType: string;
+  downlink: number;
+  rtt: number;
+}
+
+interface FirstInputEntry extends PerformanceEntry {
+  processingStart: number;
+  startTime: number;
+}
+
+interface LayoutShiftEntry extends PerformanceEntry {
+  hadRecentInput: boolean;
+  value: number;
 }
 
 class PerformanceMonitor {
@@ -71,7 +87,9 @@ class PerformanceMonitor {
       try {
         const fcpObserver = new PerformanceObserver((list) => {
           const entries = list.getEntries();
-          const fcpEntry = entries.find(entry => entry.name === 'first-contentful-paint');
+          const fcpEntry = entries.find(
+            (entry) => entry.name === 'first-contentful-paint'
+          );
           if (fcpEntry) {
             this.metrics.fcp = fcpEntry.startTime;
           }
@@ -101,10 +119,12 @@ class PerformanceMonitor {
       try {
         const fidObserver = new PerformanceObserver((list) => {
           const entries = list.getEntries();
-                  const fidEntry = entries.find(entry => entry.entryType === 'first-input') as any;
-        if (fidEntry) {
-          this.metrics.fid = fidEntry.processingStart - fidEntry.startTime;
-        }
+          const fidEntry = entries.find(
+            (entry) => entry.entryType === 'first-input'
+          ) as FirstInputEntry;
+          if (fidEntry) {
+            this.metrics.fid = fidEntry.processingStart - fidEntry.startTime;
+          }
         });
         fidObserver.observe({ entryTypes: ['first-input'] });
         this.observers.push(fidObserver);
@@ -116,12 +136,12 @@ class PerformanceMonitor {
       try {
         const clsObserver = new PerformanceObserver((list) => {
           let clsValue = 0;
-                  for (const entry of list.getEntries()) {
-          const layoutShiftEntry = entry as any;
-          if (!layoutShiftEntry.hadRecentInput) {
-            clsValue += layoutShiftEntry.value;
+          for (const entry of list.getEntries()) {
+            const layoutShiftEntry = entry as LayoutShiftEntry;
+            if (!layoutShiftEntry.hadRecentInput) {
+              clsValue += layoutShiftEntry.value;
+            }
           }
-        }
           this.metrics.cls = clsValue;
         });
         clsObserver.observe({ entryTypes: ['layout-shift'] });
@@ -136,7 +156,8 @@ class PerformanceMonitor {
     if ('performance' in window && 'timing' in performance) {
       const timing = performance.timing;
       this.metrics.navigationStart = timing.navigationStart;
-      this.metrics.domContentLoaded = timing.domContentLoadedEventEnd - timing.navigationStart;
+      this.metrics.domContentLoaded =
+        timing.domContentLoadedEventEnd - timing.navigationStart;
       this.metrics.loadComplete = timing.loadEventEnd - timing.navigationStart;
       this.metrics.ttfb = timing.responseStart - timing.requestStart;
     }
@@ -144,7 +165,9 @@ class PerformanceMonitor {
 
   private captureNetworkInfo(): void {
     if ('connection' in navigator) {
-      const connection = (navigator as any).connection;
+      const connection = (
+        navigator as Navigator & { connection?: ConnectionInfo }
+      ).connection;
       if (connection) {
         this.metrics.connection = {
           effectiveType: connection.effectiveType || 'unknown',
@@ -180,7 +203,7 @@ class PerformanceMonitor {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(performanceData),
-      }).catch((error) => {
+      }).catch((error: Error) => {
         console.warn('Failed to send performance metrics:', error);
       });
     } else {
@@ -189,7 +212,7 @@ class PerformanceMonitor {
   }
 
   disconnect(): void {
-    this.observers.forEach(observer => observer.disconnect());
+    this.observers.forEach((observer) => observer.disconnect());
     this.observers = [];
   }
 }
@@ -223,9 +246,17 @@ export const usePerformanceMonitor = () => {
 };
 
 // Component wrapper for automatic performance monitoring
-export const PerformanceMonitorProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  usePerformanceMonitor();
+export const PerformanceMonitorProvider: React.FC<{
+  children: React.ReactNode;
+}> = ({ children }) => {
+  const [isClient, setIsClient] = useState(false);
+  const monitor = usePerformanceMonitor();
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return <>{children}</>;
 };
 
-export default PerformanceMonitor; 
+export default PerformanceMonitor;
