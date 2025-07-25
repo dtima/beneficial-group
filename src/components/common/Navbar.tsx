@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
@@ -10,6 +10,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const locale = useLocale();
   const pathname = usePathname();
+
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   const navigation = [
     { name: 'Home', href: `/${locale}` },
@@ -131,7 +136,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
             />
             <div
-              className="animate-slideDown fixed left-0 right-0 top-16 z-50 border-t bg-white shadow-lg md:hidden"
+              className="fixed left-0 right-0 top-16 z-50 animate-slide-down border-t bg-white shadow-lg md:hidden"
               id="mobile-menu"
               aria-modal="true"
               role="dialog"
