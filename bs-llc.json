@@ -54,7 +54,7 @@
       },
       {
         "Layer": "Hosting",
-        "Technology": "Netlify (frontend), Supabase (API)",
+        "Technology": "Vercel (frontend), Supabase (API)",
         "Rationale": "Fast, global CDN, easy CI/CD, form handling"
       },
       {
@@ -109,15 +109,11 @@
         },
         {
           "title": "Responsive Design",
-          "details": [
-            "Optimized for desktop, tablet, and mobile."
-          ]
+          "details": ["Optimized for desktop, tablet, and mobile."]
         },
         {
           "title": "Bilingual",
-          "details": [
-            "English/French with a prominent language switcher."
-          ]
+          "details": ["English/French with a prominent language switcher."]
         },
         {
           "title": "Clear Navigation",
@@ -127,9 +123,7 @@
         },
         {
           "title": "Integrated Search",
-          "details": [
-            "Site-wide content search."
-          ]
+          "details": ["Site-wide content search."]
         },
         {
           "title": "\"About Us\" Page",
@@ -246,7 +240,7 @@
     "title": "4. Project Structure",
     "codeBlock": {
       "language": "plaintext",
-      "code": "/\n├── app/                  # Next.js App Router\n│   ├── (admin)/dashboard # Admin UI, RBAC protected\n│   ├── (site)/[locale]/  # Public site, i18n (en/fr)\n│   │   ├── home/\n│   │   ├── about/\n│   │   ├── services/\n│   │   │   ├── mining/\n│   │   │   ├── transport/\n│   │   │   ├── forestry/\n│   │   │   └── agriculture/\n│   │   ├── projects/\n│   │   ├── contact/\n│   │   └── partners/\n│   └── api/                  # API routes (proxy to Supabase, etc.)\n├── src/\n│   ├── features/             # Feature modules (mining, transport, etc.)\n│   ├── config/               # Central configs (features, site, i18n)\n│   ├── lib/                  # Supabase adapters, utils, validation\n│   ├── components/           # UI components (common, admin, forms)\n│   └── types/                # Global TypeScript types\n├── public/                   # Static assets\n├── scripts/                  # Dev scripts (init, deploy)\n├── supabase/                 # Supabase config, migrations, seeders\n├── netlify.toml              # Netlify configuration\n├── .env.local                # Environment variables\n├── next.config.mjs\n├── tailwind.config.ts\n└── tsconfig.json"
+      "code": "/\n├── app/                  # Next.js App Router\n│   ├── (admin)/dashboard # Admin UI, RBAC protected\n│   ├── (site)/[locale]/  # Public site, i18n (en/fr)\n│   │   ├── home/\n│   │   ├── about/\n│   │   ├── services/\n│   │   │   ├── mining/\n│   │   │   ├── transport/\n│   │   │   ├── forestry/\n│   │   │   └── agriculture/\n│   │   ├── projects/\n│   │   ├── contact/\n│   │   └── partners/\n│   └── api/                  # API routes (proxy to Supabase, etc.)\n├── src/\n│   ├── features/             # Feature modules (mining, transport, etc.)\n│   ├── config/               # Central configs (features, site, i18n)\n│   ├── lib/                  # Supabase adapters, utils, validation\n│   ├── components/           # UI components (common, admin, forms)\n│   └── types/                # Global TypeScript types\n├── public/                   # Static assets\n├── scripts/                  # Dev scripts (init, deploy)\n├── supabase/                 # Supabase config, migrations, seeders\n├── .env.local                # Environment variables\n├── next.config.mjs\n├── tailwind.config.ts\n└── tsconfig.json"
     }
   },
   "coreFeaturesAndCapabilities": {
@@ -280,9 +274,9 @@
     "title": "7. Performance Optimization",
     "description": "Performance strategies, including image optimization, caching, code splitting, and network resilience, are critical for serving communities in Cameroon and will be implemented as previously outlined."
   },
-  "netlifyConfiguration": {
-    "title": "8. Netlify Configuration",
-    "description": "The `netlify.toml` configuration remains optimal for a Next.js and Supabase project, providing edge handling, security headers, and caching policies."
+  "vercelConfiguration": {
+    "title": "8. Vercel Configuration",
+    "description": "Vercel provides optimal deployment for Next.js applications with automatic builds, global CDN, and edge functions support."
   },
   "communicationAndContact": {
     "title": "9. Communication & Contact",
@@ -332,9 +326,7 @@
       },
       {
         "title": "2. Configure i18n",
-        "details": [
-          "Set up `next-intl` for English/French content."
-        ]
+        "details": ["Set up `next-intl` for English/French content."]
       },
       {
         "title": "3. Implement Core Service Modules",
@@ -357,18 +349,16 @@
       },
       {
         "title": "6. Integrate Communication",
-        "details": [
-          "Configure WhatsApp API and email notifications."
-        ]
+        "details": ["Configure WhatsApp API and email notifications."]
       },
       {
         "title": "7. Deploy & Iterate",
         "details": [
-          "Deploy to Netlify (frontend) and Supabase (backend).",
+          "Deploy to Vercel (frontend) and Supabase (backend).",
           "Gather feedback and add features like payment processing."
         ]
       }
     ]
   },
   "footer": "This documentation has been refactored for Beneficial Group, aligning its diversified services with a modern, scalable, and secure technology stack. If you need a more detailed breakdown for any section, just let me know!"
-} 
+}

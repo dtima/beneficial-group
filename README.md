@@ -58,23 +58,26 @@ src/
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - pnpm (recommended) or npm
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd beneficial-group
 ```
 
 2. Install dependencies:
+
 ```bash
 pnpm install
 ```
 
 3. Run the development server:
+
 ```bash
 pnpm dev
 ```
@@ -100,6 +103,7 @@ Language switching is available via the navbar button.
 ## 📱 Pages
 
 ### Homepage (`/`)
+
 - Hero section with call-to-action
 - Featured services overview
 - Impact statistics
@@ -108,11 +112,13 @@ Language switching is available via the navbar button.
 - Partners section
 
 ### About (`/about`)
+
 - CEO welcome message
 - Company vision
 - Management team profiles
 
 ### Services (`/services`)
+
 - Overview of all services
 - Individual service pages:
   - Mining (`/services/mining`)
@@ -121,10 +127,12 @@ Language switching is available via the navbar button.
   - Agriculture (`/services/agriculture`)
 
 ### Projects (`/projects`)
+
 - Sustainable Bamboo Cultivation
 - Toothpick Production Initiative
 
 ### Contact (`/contact`)
+
 - Contact information
 - Smart contact form with department routing
 - WhatsApp integration
@@ -132,15 +140,18 @@ Language switching is available via the navbar button.
 ## 🎨 Design System
 
 ### Colors
+
 - Primary: Green (`#059669`)
 - Secondary: Gray scale
 - Accent: White and black
 
 ### Typography
+
 - **Inter**: Body text and UI elements
 - **Playfair Display**: Headings and display text
 
 ### Components
+
 - Responsive navigation with dropdown menus
 - Card-based layouts
 - Form components with validation
@@ -149,6 +160,7 @@ Language switching is available via the navbar button.
 ## 🔧 Configuration
 
 ### Environment Variables
+
 Create a `.env.local` file for environment-specific configuration:
 
 ```env
@@ -156,25 +168,22 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3000
 ```
 
 ### Tailwind Configuration
+
 Custom fonts and colors are configured in `tailwind.config.ts`.
 
 ## 📦 Deployment
 
 ### Vercel (Recommended)
-1. Connect your repository to Vercel
-2. Configure environment variables
-3. Deploy automatically on push
 
-### Netlify
-1. Build command: `pnpm build`
-2. Publish directory: `.next`
-3. Configure redirects for internationalization
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
-### Manual Deployment
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-next-intl&project-name=with-next-intl&repository-name=with-next-intl&redirect-url=https://github.com/vercel/next.js/tree/canary/examples/with-next-intl&demo-title=next-intl%20Example&demo-description=Internationalization%20example%20using%20next-intl&demo-url=https://with-next-intl.vercel.app&demo-image=https://with-next-intl.vercel.app/og.png)
+
 ```bash
-pnpm build
-pnpm start
+npx create-next-app@latest --example with-next-intl with-next-intl-app
 ```
+
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## 🤝 Contributing
 
