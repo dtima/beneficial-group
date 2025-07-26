@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
 
@@ -5,8 +7,8 @@ export default function NotFound() {
   const locale = useLocale();
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8 text-center">
+    <div className="flex min-h-screen items-center justify-center bg-gray-50 px-4 py-12 sm:px-6 lg:px-8">
+      <div className="w-full max-w-md space-y-8 text-center">
         <div>
           <div className="mx-auto h-12 w-12 text-red-600">
             <svg
@@ -28,19 +30,19 @@ export default function NotFound() {
             Page Not Found
           </h2>
           <p className="mt-2 text-sm text-gray-600">
-            Sorry, we couldn't find the page you're looking for.
+            Sorry, we couldn&apos;t find the page you&apos;re looking for.
           </p>
         </div>
         <div className="flex flex-col space-y-3">
           <Link
             href={`/${locale}`}
-            className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors duration-200"
+            className="group relative flex w-full justify-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-sm font-medium text-white transition-colors duration-200 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
           >
             Go to Homepage
           </Link>
           <Link
             href={`/${locale}/contact`}
-            className="group relative w-full flex justify-center py-2 px-4 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors duration-200"
+            className="group relative flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-colors duration-200 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
           >
             Contact Support
           </Link>
@@ -48,4 +50,4 @@ export default function NotFound() {
       </div>
     </div>
   );
-} 
+}
