@@ -20,6 +20,15 @@ const nextConfig: NextConfig = {
   // Performance optimizations
   experimental: {
     optimizePackageImports: ['@next/font', 'next-intl'],
+    // Turbopack font loading optimization
+    turbo: {
+      rules: {
+        '*.woff2': ['file-loader'],
+        '*.woff': ['file-loader'],
+        '*.ttf': ['file-loader'],
+        '*.eot': ['file-loader'],
+      },
+    },
   },
 
   // Compression
@@ -43,6 +52,19 @@ const nextConfig: NextConfig = {
 
   // Webpack optimizations
   webpack: (config, { dev, isServer }) => {
+    // Font loading optimization
+    config.module.rules.push({
+      test: /\.(woff|woff2|eot|ttf|otf)$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          publicPath: '/_next/static/fonts/',
+          outputPath: 'static/fonts/',
+          name: '[name].[hash].[ext]',
+        },
+      },
+    });
+
     // Optimize bundle size
     if (!dev && !isServer) {
       config.optimization.splitChunks = {

@@ -14,18 +14,28 @@ import StructuredData, {
 import { PerformanceMonitorProvider } from '@/components/common/PerformanceMonitor';
 import SkipNavigation from '@/components/common/SkipNavigation';
 
+// Enterprise-grade font configuration with Turbopack compatibility
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
-  preload: false,
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  fallback: [
+    'system-ui',
+    '-apple-system',
+    'BlinkMacSystemFont',
+    'Segoe UI',
+    'Roboto',
+    'sans-serif',
+  ],
 });
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-playfair',
-  preload: false,
+  weight: ['400', '500', '600', '700', '800', '900'],
+  fallback: ['Georgia', 'Times New Roman', 'serif'],
 });
 
 export async function generateMetadata({
