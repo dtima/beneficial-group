@@ -1,45 +1,100 @@
 'use client';
 
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import Link from 'next/link';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+import ErrorBoundary from './ErrorBoundary';
 
-export default function Navbar() {
+function NavbarContent() {
   const [isOpen, setIsOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
+  const [isToggling, setIsToggling] = useState(false);
+  const [lastPathname, setLastPathname] = useState<string>('');
   const locale = useLocale();
   const pathname = usePathname();
   const menuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const t = useTranslations('Navbar');
 
-  // Enhanced close function with animation support
+  // Memoized navigation array to prevent unnecessary re-renders
+  const navigation = useMemo(
+    () => [
+      { name: t('home'), href: `/${locale}` },
+      { name: t('about'), href: `/${locale}/about` },
+      { name: t('services'), href: `/${locale}/services` },
+      { name: t('projects'), href: `/${locale}/projects` },
+      { name: t('news'), href: `/${locale}/news` },
+      { name: t('contact'), href: `/${locale}/contact` },
+    ],
+    [t, locale]
+  );
+
+  // Memoized active state checker
+  const isActive = useCallback(
+    (href: string) => {
+      if (href === `/${locale}`) {
+        return pathname === `/${locale}` || pathname === `/${locale}/`;
+      }
+      return pathname.startsWith(href);
+    },
+    [pathname, locale]
+  );
+
+  // Enhanced close function with proper state management
   const closeMenu = useCallback(() => {
-    if (!isOpen) return;
+    if (!isOpen || isClosing) return;
+
+    // Clear any existing timeout
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+    }
 
     setIsClosing(true);
-    setTimeout(() => {
+    closeTimeoutRef.current = setTimeout(() => {
       setIsOpen(false);
       setIsClosing(false);
+      closeTimeoutRef.current = null;
     }, 250); // Match animation duration
-  }, [isOpen]);
+  }, [isOpen, isClosing]);
 
-  // Toggle function with proper state management
-  const toggleMenu = useCallback(() => {
-    if (isOpen || isClosing) {
-      closeMenu();
-    } else {
-      setIsOpen(true);
-    }
-  }, [isOpen, isClosing, closeMenu]);
+  // Fixed toggle function with robust state management
+  const toggleMenu = useCallback(
+    (event?: React.MouseEvent) => {
+      // Prevent event bubbling that could cause race conditions
+      event?.stopPropagation();
 
-  // Close mobile menu when route changes
+      // Prevent rapid toggles
+      if (isToggling) return;
+
+      setIsToggling(true);
+
+      // Use a more stable approach
+      if (isOpen || isClosing) {
+        closeMenu();
+      } else {
+        setIsOpen(true);
+      }
+
+      // Reset toggle lock after a short delay
+      setTimeout(() => setIsToggling(false), 150);
+    },
+    [isOpen, isClosing, closeMenu, isToggling]
+  );
+
+  // Close mobile menu when route changes - FIXED LOGIC
   useEffect(() => {
-    closeMenu();
-  }, [pathname, closeMenu]);
+    // Only close menu if it's open AND the pathname actually changed
+    if (isOpen && lastPathname && lastPathname !== pathname) {
+      closeMenu();
+    }
+    // Update last pathname
+    setLastPathname(pathname);
+  }, [pathname, isOpen, closeMenu, lastPathname]);
 
-  // Enhanced keyboard navigation
+  // Enhanced keyboard navigation with proper cleanup
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape' && isOpen) {
@@ -62,7 +117,7 @@ export default function Navbar() {
     };
   }, [isOpen, closeMenu]);
 
-  // Trap focus within mobile menu
+  // Trap focus within mobile menu with enhanced cleanup
   useEffect(() => {
     if (!isOpen || !menuRef.current) return;
 
@@ -99,21 +154,15 @@ export default function Navbar() {
     };
   }, [isOpen]);
 
-  const navigation = [
-    { name: 'Home', href: `/${locale}` },
-    { name: 'About', href: `/${locale}/about` },
-    { name: 'Services', href: `/${locale}/services` },
-    { name: 'Projects', href: `/${locale}/projects` },
-    { name: 'News', href: `/${locale}/news` },
-    { name: 'Contact', href: `/${locale}/contact` },
-  ];
-
-  const isActive = (href: string) => {
-    if (href === `/${locale}`) {
-      return pathname === `/${locale}` || pathname === `/${locale}/`;
-    }
-    return pathname.startsWith(href);
-  };
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (closeTimeoutRef.current) {
+        clearTimeout(closeTimeoutRef.current);
+      }
+      document.body.style.overflow = '';
+    };
+  }, []);
 
   return (
     <nav
@@ -128,6 +177,7 @@ export default function Navbar() {
             href={`/${locale}`}
             className="group flex items-center"
             onClick={closeMenu}
+            aria-label="Beneficial Solutions LLC - Return to homepage"
           >
             <Image
               src="/logo.png"
@@ -144,7 +194,11 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden items-center space-x-8 md:flex">
+          <div
+            className="hidden items-center space-x-8 md:flex"
+            role="menubar"
+            aria-label="Primary navigation"
+          >
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -155,6 +209,8 @@ export default function Navbar() {
                     : 'text-gray-700 hover:bg-red-50 hover:text-red-600'
                 }`}
                 aria-current={isActive(item.href) ? 'page' : undefined}
+                role="menuitem"
+                tabIndex={0}
               >
                 {item.name}
               </Link>
@@ -171,6 +227,8 @@ export default function Navbar() {
               className="hidden rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 transition-colors duration-200 hover:border-red-300 hover:text-red-600 md:block"
               aria-label={`Switch to ${locale === 'en' ? 'French' : 'English'} language`}
               onClick={closeMenu}
+              role="button"
+              tabIndex={0}
             >
               {locale === 'en' ? 'FR' : 'EN'}
             </Link>
@@ -183,6 +241,8 @@ export default function Navbar() {
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
               aria-label={isOpen ? 'Close mobile menu' : 'Open mobile menu'}
+              aria-haspopup="true"
+              disabled={isToggling}
             >
               <svg
                 className="h-6 w-6 transition-transform duration-200"
@@ -216,35 +276,53 @@ export default function Navbar() {
           <>
             {/* Enhanced backdrop with blur */}
             <div
-              className={`backdrop-blur-mobile fixed inset-0 z-40 bg-black/40 transition-opacity duration-200 md:hidden ${
+              className={`backdrop-blur-mobile mobile-backdrop-visible fixed inset-0 z-40 bg-black/40 transition-opacity duration-200 md:hidden ${
                 isClosing ? 'animate-fade-out' : 'animate-fade-in-overlay'
               }`}
               aria-hidden="true"
-              onClick={closeMenu}
+              onClick={(e) => {
+                e.stopPropagation();
+                closeMenu();
+              }}
             />
             <div
               ref={menuRef}
-              className={`fixed left-0 right-0 top-16 z-50 border-t bg-white/95 shadow-xl backdrop-blur-sm md:hidden ${
+              className={`mobile-menu-visible fixed left-0 right-0 top-16 z-50 border-t bg-white/95 shadow-xl backdrop-blur-sm md:hidden ${
                 isClosing ? 'animate-slide-up' : 'animate-slide-down'
               }`}
               id="mobile-menu"
               aria-modal="true"
               role="dialog"
               aria-label="Mobile navigation menu"
+              aria-labelledby="mobile-menu-title"
             >
-              <div className="flex flex-col space-y-1 px-4 py-6">
+              <div
+                className="flex flex-col space-y-1 px-4 py-6"
+                role="menu"
+                aria-label="Mobile navigation"
+              >
+                <h2 id="mobile-menu-title" className="sr-only">
+                  Mobile Navigation Menu
+                </h2>
                 {navigation.map((item, index) => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`mobile-menu-item block rounded-lg px-4 py-4 text-lg font-medium transition-all duration-200 ${
+                    className={`mobile-menu-item block flex min-h-[44px] items-center rounded-lg px-4 py-4 text-lg font-medium transition-all duration-200 ${
                       isActive(item.href)
                         ? 'border-l-4 border-red-600 bg-red-50 text-red-600'
                         : 'text-gray-700 hover:bg-red-50 hover:text-red-600 focus:bg-red-50 focus:text-red-600'
                     }`}
-                    style={{ animationDelay: `${index * 50}ms` }}
+                    style={{
+                      animationDelay: `${index * 50}ms`,
+                    }}
                     aria-current={isActive(item.href) ? 'page' : undefined}
-                    onClick={closeMenu}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      closeMenu();
+                    }}
+                    role="menuitem"
+                    tabIndex={0}
                   >
                     {item.name}
                   </Link>
@@ -255,9 +333,14 @@ export default function Navbar() {
                       `/${locale}`,
                       `/${locale === 'en' ? 'fr' : 'en'}`
                     )}
-                    className="mobile-menu-item block w-full rounded-lg px-4 py-4 text-left text-lg font-medium text-gray-700 transition-all duration-200 hover:bg-red-50 hover:text-red-600 focus:bg-red-50 focus:text-red-600"
+                    className="mobile-menu-item block flex min-h-[44px] w-full items-center rounded-lg px-4 py-4 text-left text-lg font-medium text-gray-700 transition-all duration-200 hover:bg-red-50 hover:text-red-600 focus:bg-red-50 focus:text-red-600"
                     aria-label={`Switch to ${locale === 'en' ? 'French' : 'English'} language`}
-                    onClick={closeMenu}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      closeMenu();
+                    }}
+                    role="menuitem"
+                    tabIndex={0}
                   >
                     <span className="flex items-center">
                       <svg
@@ -265,6 +348,7 @@ export default function Navbar() {
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
+                        aria-hidden="true"
                       >
                         <path
                           strokeLinecap="round"
@@ -285,5 +369,30 @@ export default function Navbar() {
         )}
       </div>
     </nav>
+  );
+}
+
+export default function Navbar() {
+  return (
+    <ErrorBoundary
+      fallback={
+        <nav className="fixed top-0 z-50 w-full bg-white/95 shadow-lg backdrop-blur-sm">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="flex h-16 items-center justify-between">
+              <div className="flex items-center">
+                <span className="text-xl font-bold text-gray-900">
+                  Beneficial Solutions
+                </span>
+              </div>
+              <div className="text-sm text-gray-500">
+                Navigation temporarily unavailable
+              </div>
+            </div>
+          </div>
+        </nav>
+      }
+    >
+      <NavbarContent />
+    </ErrorBoundary>
   );
 }

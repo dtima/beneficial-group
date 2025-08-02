@@ -20,14 +20,18 @@ const nextConfig: NextConfig = {
   // Performance optimizations
   experimental: {
     optimizePackageImports: ['@next/font', 'next-intl'],
-    // Turbopack font loading optimization
-    turbo: {
-      rules: {
-        '*.woff2': ['file-loader'],
-        '*.woff': ['file-loader'],
-        '*.ttf': ['file-loader'],
-        '*.eot': ['file-loader'],
-      },
+  },
+
+  // Server external packages for formatjs
+  serverExternalPackages: ['@formatjs/icu-messageformat-parser'],
+
+  // Turbopack configuration (stable)
+  turbopack: {
+    rules: {
+      '*.woff2': ['file-loader'],
+      '*.woff': ['file-loader'],
+      '*.ttf': ['file-loader'],
+      '*.eot': ['file-loader'],
     },
   },
 
@@ -65,6 +69,14 @@ const nextConfig: NextConfig = {
       },
     });
 
+    // Handle formatjs dependencies
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@formatjs/icu-messageformat-parser': require.resolve(
+        '@formatjs/icu-messageformat-parser'
+      ),
+    };
+
     // Optimize bundle size
     if (!dev && !isServer) {
       config.optimization.splitChunks = {
@@ -74,6 +86,12 @@ const nextConfig: NextConfig = {
             test: /[\\/]node_modules[\\/]/,
             name: 'vendors',
             chunks: 'all',
+          },
+          formatjs: {
+            test: /[\\/]node_modules[\\/]@formatjs[\\/]/,
+            name: 'formatjs',
+            chunks: 'all',
+            priority: 10,
           },
         },
       };
